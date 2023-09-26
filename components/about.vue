@@ -1,6 +1,8 @@
 <script  setup>
 const aboutScroll = () =>{
     let about = document.getElementById('about').getBoundingClientRect()
+    let skills = document.getElementsByClassName('skills')[0]
+    let skillTop = document.getElementsByClassName('skillTop')[0].getBoundingClientRect()
     let about_content = document.getElementsByClassName('about-content')[0]
     let top, bottom, winheight
     top = about.top
@@ -9,14 +11,18 @@ const aboutScroll = () =>{
 
     if (top + 200 < winheight && bottom > 0) {
         about_content.style.display = 'block'
+        if (skillTop.top + 100 < winheight && skillTop.bottom > 0  ) {
+            skills.classList.remove('d-none')
+            window.removeEventListener('scroll'. aboutScroll)
+        }
     }
 }
 
 onMounted(() => {
     window.addEventListener('scroll', aboutScroll)
 })
-onBeforeMount(() => {
-
+onBeforeUnmount(() => {
+    window.removeEventListener('scroll'. aboutScroll)
 })
 </script>
 
@@ -31,7 +37,7 @@ onBeforeMount(() => {
                     <div class="about-me-txt p-lg-5 ">
                         <p class="text-light">
                             <img src="~/assets/img/ebube1.jpg" alt="" class="mx-md-3 mb-lg-0 mb-4 ">
-                            Passionate Frontend Developer with a focus on creating seamless web applications. Proficient in
+                            <span class="txt">Passionate Frontend Developer with a focus on creating seamless web applications. Proficient in
                             <span class="skill-txt">HTML</span>, <span class="skill-txt">CSS</span>,
                             <span class="skill-txt">Bootstrap</span> and <span class="skill-txt">JavaScript</span>, I
                             specialize in crafting visually appealing and responsive
@@ -51,7 +57,7 @@ onBeforeMount(() => {
                             my
                             skills while expanding my toolkit.
                             <br><br>
-                            Let's collaborate to bring your ideas to life!"
+                            Let's collaborate to bring your ideas to life!"</span>
                         </p>
                     </div>
                 </div>
@@ -91,8 +97,8 @@ onBeforeMount(() => {
                             <b> Freelancing</b> <span> Available</span>
                         </p>
                     </div>
-                    <div class="w-100">
-                        <div class=" row skills ">
+                    <div class="w-100 skillTop">
+                        <div class=" row skills d-none">
                             <div class="col-lg-6 col-12">
                                 <b>HTML</b>
                                 <div class="progress">
@@ -194,6 +200,7 @@ onBeforeMount(() => {
             width: 300px
             float: left
             animation: zoomIn 1s ease 
+       
         .skill-txt
             color: $secondary
 
@@ -213,6 +220,7 @@ onBeforeMount(() => {
         margin: 10px 0
         .progress-bar
             background-color: $secondary
+            animation: slideInLeft .8s ease 
            
         .w100
             width: 100%

@@ -1,10 +1,30 @@
-<script lang="ts" setup>
+<script setup>
+const servicesScroll = () =>{
+    let service = document.getElementById('services').getBoundingClientRect()
+    let service_content = document.getElementsByClassName('service-content')[0]
+    let top, bottom, winheight
+    top = service.top
+    bottom = service.bottom
+    winheight = window.innerHeight
 
+    if (top + 200 < winheight && bottom > 0) {
+        service_content.style.display = 'block'
+            window.removeEventListener('scroll'. servicesScroll)
+      
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', servicesScroll)
+})
+onBeforeUnmount(()=>{
+    window.addEventListener('scroll', servicesScroll)
+})
 </script>
 
 <template>
     <div id="services" class="services">
-        <div>
+        <div class="service-content">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Services</h2>
             </div>
@@ -137,6 +157,8 @@
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
 .services
+    .service-content
+        display: none
     .single-service
         margin-top: 40px
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)
