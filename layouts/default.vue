@@ -32,10 +32,10 @@ onMounted(() => {
                             <ul class="d-lg-flex d-none mt-2">
                                 <li class=""><router-link to="#home">Home</router-link></li>
                                 <li class=""><router-link to="#about">About</router-link></li>
-                                <li class=""><router-link to="/service">Service</router-link></li>
-                                <li class=""><router-link to="/resume">Resume</router-link></li>
-                                <li class=""><router-link to="/portfolio">my Work</router-link></li>
-                                <li class=""><router-link to="/contact">Contact</router-link></li>
+                                <li class=""><router-link to="#services">Service</router-link></li>
+                                <li class=""><router-link to="#resume">Resume</router-link></li>
+                                <li class=""><router-link to="#portfolio">my Work</router-link></li>
+                                <li class=""><router-link to="#contact">Contact</router-link></li>
 
                             </ul>
                         </div>
@@ -47,6 +47,12 @@ onMounted(() => {
         <div class="slot">
             <slot></slot>
         </div>
+
+        <footer>
+            <div class="w-100 footer text-primary shadow-lg py-3">
+               &copy;2023 Ebube Ireneaus
+            </div>
+        </footer>
     </main>
 </template>
 
@@ -87,6 +93,9 @@ header
 // .router-link-active
 //     color: $secondary !important
             
-            
+.footer
+    display: grid
+    place-items: center     
+
            
 </style>

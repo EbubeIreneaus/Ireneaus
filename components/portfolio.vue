@@ -63,7 +63,7 @@ const changePrevImg = (e) => {
 </script>
  
 <template>
-    <div id="portfiolo" class="portfolio mt-5">
+    <div id="portfolio" class="portfolio mt-5">
         <div>
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Portfiolo</h2>

@@ -1,7 +1,19 @@
 <script  setup>
+const aboutScroll = () =>{
+    let about = document.getElementById('about').getBoundingClientRect()
+    let about_content = document.getElementsByClassName('about-content')[0]
+    let top, bottom, winheight
+    top = about.top
+    bottom = about.bottom
+    winheight = window.innerHeight
+
+    if (top + 200 < winheight && bottom > 0) {
+        about_content.style.display = 'block'
+    }
+}
 
 onMounted(() => {
-
+    window.addEventListener('scroll', aboutScroll)
 })
 onBeforeMount(() => {
 
@@ -10,7 +22,7 @@ onBeforeMount(() => {
 
 <template>
     <div id="about" class="about">
-        <div>
+        <div class="about-content">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">About Me</h2>
             </div>
@@ -18,7 +30,7 @@ onBeforeMount(() => {
                 <div class="first-sec-about p-lg-1 p-2">
                     <div class="about-me-txt p-lg-5 ">
                         <p class="text-light">
-                            <img src="~/assets/img/ebube1.jpg" alt="" class="mx-md-3 mb-lg-0 mb-4">
+                            <img src="~/assets/img/ebube1.jpg" alt="" class="mx-md-3 mb-lg-0 mb-4 ">
                             Passionate Frontend Developer with a focus on creating seamless web applications. Proficient in
                             <span class="skill-txt">HTML</span>, <span class="skill-txt">CSS</span>,
                             <span class="skill-txt">Bootstrap</span> and <span class="skill-txt">JavaScript</span>, I
@@ -173,12 +185,15 @@ onBeforeMount(() => {
 
 <style lang="sass" scoped>
 @import "~/assets/css/_color.sass"     
+.about-content
+    display: none
 .about-me-txt
     p
        
         img
             width: 300px
             float: left
+            animation: zoomIn 1s ease 
         .skill-txt
             color: $secondary
 

@@ -65,6 +65,7 @@ onBeforeMount(()=>{
        <services />
        <resume />
        <portfolio />
+       <contact />
     </div>
 </template>
 
