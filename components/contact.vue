@@ -29,11 +29,32 @@ const sendMail = async (e) => {
      
 }
 
+const contactScroll = () =>{
+    let contact = document.getElementById('contact').getBoundingClientRect()
+    let contact_content = document.getElementsByClassName('contact-content')[0]
+    let top, bottom, winheight
+    top = contact.top
+    bottom = contact.bottom
+    winheight = window.innerHeight
+
+    if (top + 200 < winheight && bottom > 0) {
+        contact_content.style.display = 'block'
+            window.removeEventListener('scroll'. contactScroll)
+      
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', contactScroll)
+})
+onBeforeUnmount(()=>{
+    window.addEventListener('scroll', contactScroll)
+})
 </script>
 
 <template>
     <section id="contact" class="contact section-show mb-5">
-        <div class="">
+        <div class="contact-content">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Contact</h2>
             </div>
@@ -188,7 +209,7 @@ const sendMail = async (e) => {
 
 
         .section-title 
-            p 
+            // p 
             margin: 0
             margin: -15px 0 15px 0
             font-size: 36px

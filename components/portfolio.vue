@@ -60,11 +60,33 @@ const openModal = (index) => {
 const changePrevImg = (e) => {
     prev_img.value = e.target.src
 }
+
+const portfolioScroll = () =>{
+    let service = document.getElementById('portfolio').getBoundingClientRect()
+    let portfolio_content = document.getElementsByClassName('portfolio-content')[0]
+    let top, bottom, winheight
+    top = service.top
+    bottom = service.bottom
+    winheight = window.innerHeight
+
+    if (top + 200 < winheight && bottom > 0) {
+        portfolio_content.style.display = 'block'
+            window.removeEventListener('scroll'. portfolioScroll)
+      
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', portfolioScroll)
+})
+onBeforeUnmount(()=>{
+    window.addEventListener('scroll', portfolioScroll)
+})
 </script>
  
 <template>
     <div id="portfolio" class="portfolio mt-5">
-        <div>
+        <div class="portfolio-content">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
@@ -138,14 +160,16 @@ const changePrevImg = (e) => {
         border-radius: 40px
     
 
-
+    .portfolio-content
+        display: none
+        
 
     .port-container
         display: grid
         grid-template-columns: repeat(3, 33.33%)
         gap: 20px
         padding: 0 7em
-
+        animation: zoomIn 1s ease 
         .media-sec
             box-shadow: 0 0 10px 0 black
 

@@ -1,10 +1,30 @@
-<script lang="ts" setup>
+<script  setup>
+const resumeScroll = () =>{
+    let service = document.getElementById('resume').getBoundingClientRect()
+    let resume_content = document.getElementsByClassName('resume-content')[0]
+    let top, bottom, winheight
+    top = service.top
+    bottom = service.bottom
+    winheight = window.innerHeight
 
+    if (top + 200 < winheight && bottom > 0) {
+        resume_content.style.display = 'block'
+            window.removeEventListener('scroll'. resumeScroll)
+      
+    }
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', resumeScroll)
+})
+onBeforeUnmount(()=>{
+    window.addEventListener('scroll', resumeScroll)
+})
 </script>
 
 <template>
     <div id="resume" class="resume">
-        <div>
+        <div class="resume-content">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Resume</h2>
             </div>
@@ -15,7 +35,7 @@
                     community is one of the ways I stay connected and grow as a developer.</span>
             </div>
             <div class="row mb-3">
-                <div class="col-lg-6 col-12 position-relative">
+                <div class="col-lg-6 col-12 position-relative animate__animated animate__slideInLeft">
                     <h3 class="text-primary ms-3">Sumary</h3>
                     <div class="anm h-100">
                         <div class="s-c border "></div>
@@ -43,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-12 position-relative">
+                <div class="col-lg-6 col-12 position-relative animate__animated animate__slideInRight">
                     <h3 class="ms-3 text-primary">Experience</h3>
                     <div class="anm h-100">
                         <div class="s-c border"></div>
@@ -79,7 +99,8 @@
 
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
-
+.resume-content
+    display: none
 .anm 
     position: absolute
 /* overflow: hidden; */
