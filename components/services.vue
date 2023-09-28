@@ -32,6 +32,7 @@ onBeforeUnmount(()=>{
                 <div class="animate__animated animate__slideInUp ">
                     <div class="container">
                         <div class="row">
+
                             <!-- Start Single Service -->
                             <div class="col-md-6 col-lg-4">
                                 <div class="single-service   animate__animated animate__slideInRight animate__delay-1s">
@@ -51,47 +52,8 @@ onBeforeUnmount(()=>{
                                     </div>
                                 </div>
                             </div>
-                            
-                               <!-- Start Single Service -->
-                               <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__zoomIn animate__delay-1s">
-                                    <div class="part-1">
-                                        <i class="fab fa-asymmetrik"></i>
-                                        <h3 class="title">SEO Optimization</h3>
-                                    </div>
-                                    <div class="part-2">
-                                        <p class="description"> this enhance the online visibility and attract organic
-                                            traffic from
-                                            search engines. As part of my services,
-                                            I specialize in implementing effective SEO strategies to boost your website's
-                                            ranking,
-                                            increase organic
-                                            traffic, and drive targeted leads to your business.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__slideInDown animate__delay-1s">
-                                    <div class="part-1">
-                                        <i class="fab fa-angellist"></i>
-                                        <h3 class="title">WordPress Development</h3>
-                                    </div>
-                                    <div class="part-2">
-                                        <small class="description">As a backend developer, I specialize in building the
-                                            foundation
-                                            that
-                                            drives web applications, ensuring they run efficiently and securely behind the
-                                            scenes.
-                                            I design and implement robust APIs, manage databases, and handle server
-                                            operations.
-
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Service -->
-                            <div class="col-md-6 col-lg-4">
+                                   <!-- Start Single Service -->
+                                   <div class="col-md-6 col-lg-4">
                                 <div class="single-service animate__animated animate__slideInDown animate__delay-1s">
                                     <div class="part-1">
                                         <i class="fab fa-angellist"></i>
@@ -111,8 +73,10 @@ onBeforeUnmount(()=>{
                                 </div>
                             </div>
                          
-                            <!-- Start Single Service -->
-                            <div class="col-md-6 col-lg-4">
+                         
+                         
+                               <!-- Start Single Service -->
+                               <div class="col-md-6 col-lg-4">
                                 <div class="single-service animate__animated animate__slideInLeft animate__delay-1s">
                                     <div class="part-1">
                                         <i class="fas fa-award"></i>
@@ -129,7 +93,45 @@ onBeforeUnmount(()=>{
                                 </div>
                             </div>
           
-                         
+                               <!-- Start Single Service -->
+                               <div class="col-md-6 col-lg-4">
+                                <div class="single-service animate__animated animate__zoomIn animate__delay-1s">
+                                    <div class="part-1">
+                                        <i class="fab fa-asymmetrik"></i>
+                                        <h3 class="title">SEO Optimization</h3>
+                                    </div>
+                                    <div class="part-2">
+                                        <p class="description"> this enhance the online visibility and attract organic
+                                            traffic from
+                                            search engines. As part of my services,
+                                            I specialize in implementing effective SEO strategies to boost your website's
+                                            ranking,
+                                            increase organic
+                                            traffic, and drive targeted leads to your business.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="col-md-6 col-lg-4">
+                                <div class="single-service animate__animated animate__slideInDown animate__delay-1s">
+                                    <div class="part-1">
+                                        <i class="fab fa-angellist"></i>
+                                        <h3 class="title">WordPress Development</h3>
+                                    </div>
+                                    <div class="part-2">
+                                        <small class="description">As a backend developer, I specialize in building the
+                                            foundation
+                                            that
+                                            drives web applications, ensuring they run efficiently and securely behind the
+                                            scenes.
+                                            I design and implement robust APIs, manage databases, and handle server
+                                            operations.
+
+                                        </small>
+                                    </div>
+                                </div>
+                            </div> -->
+                     
          
                             <!-- Start Single Service -->
                             <div class="col-md-6 col-lg-4">

@@ -11,7 +11,8 @@ onMounted(() => {
 })
 </script>
 
-<template>
+
+<template >
     <main>
         <div class="layout-bar">
             <header>

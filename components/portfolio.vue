@@ -5,16 +5,18 @@ const dModal = ref(false)
 const prev_img = ref(null)
 const project = ref(null)
 const medias = ref([
-    // {
-    //     name: 'Twitter-like App',
-    //     desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-    //                 designed to help users with communication, Entertainment, News. The app\
-    //                  provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-    //                  on Tweets efficiently.',
-    //     features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
-    //     technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-    //     src: ['OkisRepair/home.png'], link: '', repo: ''
-    // },
+    {
+        name: 'My Portifolio',
+        desc: "Welcome to my digital portfolio, a space where creativity knows no bounds. I'm \
+        Ebube Ireneaus, and I specialize in bringing ideas to life through web development, design, and more.\
+        \n My portfolio is more than just a collection of projects; it's a testament to my dedication to \
+         innovation and the art of storytelling through technology,",
+        features: ['Gallery', 'About me', 'What I offer', 'my resume', 'my skills'],
+        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js'],
+        src: ['portfolio/home.png','portfolio/about.png',
+        'portfolio/service.png','portfolio/resume.png','portfolio/contact.png'], 
+        link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
+    },
 
     {
         name: 'Todo App',

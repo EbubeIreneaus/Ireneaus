@@ -43,7 +43,7 @@ onBeforeUnmount(()=>{
                     </div>
                     <div class="ms-4 mb-3">
                         <h5 class="text-primary ms-2">Ebube Ireneaus</h5>
-                        <small class="text-secondary">As a Front End <i class="fas fa-expand-alt    "></i> Developer, I possess a comprehensive understanding of both front-end and
+                        <small class="text-secondary">As a Full Stack <i class="fas fa-expand-alt    "></i> Developer, I possess a comprehensive understanding of both front-end and
                            the basics of back-end technologies. My proficiency includes working with HTML, CSS, and JavaScript
                             frameworks such as Vue.js, Nuxt.js an JQuery for building captivating user interfaces.
                             On the server-side, I'm well-versed in PHP and Django,
