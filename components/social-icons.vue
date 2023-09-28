@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="social-icons">
+    <div class="social-icons ">
         <a href="https://linkedin.com/in/ireneaus" target="_blank" class="px-2 py-1 text-primary  ">
             <i class="fa-brands  fa-linkedin text-hover-secondary"></i>
         </a>

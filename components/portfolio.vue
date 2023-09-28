@@ -5,48 +5,52 @@ const dModal = ref(false)
 const prev_img = ref(null)
 const project = ref(null)
 const medias = ref([
-    {
-        name: 'Twitter-like App',
-        desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-                    designed to help users with communication, Entertainment, News. The app\
-                     provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently.',
-        features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
-        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: ['OkisRepair/home.png'], link: '', repo: ''
-    },
+    // {
+    //     name: 'Twitter-like App',
+    //     desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
+    //                 designed to help users with communication, Entertainment, News. The app\
+    //                  provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
+    //                  on Tweets efficiently.',
+    //     features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
+    //     technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
+    //     src: ['OkisRepair/home.png'], link: '', repo: ''
+    // },
 
     {
-        name: 'Twitter-like App',
-        desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-                    designed to help users with communication, Entertainment, News. The app\
-                     provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently.',
-        features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
-        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: ['Todo App/home default.jpg'], link: '', repo: ''
+        name: 'Todo App',
+        desc: 'The Interactive To-Do List Web App is a user-friendly task management\
+                     tool designed to help users keep timing of their daily tasks and improve productivity. \
+                      The app provides an intuitive and visually appealing interface to create, edit, Delete, \
+                       and multi-delete tasks efficiently.',
+        features: ['Alarm', 'Time Calculation', 'Dark and Light Themes', 'animations'],
+        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs"],
+        src: ['Todo App/home dk.png', 'Todo App/home lt.png', 'Todo App/alarm.jpg', 'Todo App/new task dk.png',
+            'Todo App/edit lt.jpg'],
+        link: 'https://ireneaus-todo-app-project.netlify.app',
+        repo: 'https://github.com/EbubeIreneaus/TodoApp'
     },
     {
         name: 'Twitter-like App',
         desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
                     designed to help users with communication, Entertainment, News. The app\
                      provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently.',
+                     on Tweets efficiently. this project has not been hosted online, cause of the server side(python django) deployment',
         features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: ['twitter app/home.png', 'twitter app/register.png', 'twitter app/singleTweet.png', 'twitter app/profile.png'], link: '', repo: ''
+        src: ['twitter app/home.png', 'twitter app/register.png', 'twitter app/singleTweet.png', 'twitter app/profile.png'],
+         link: '', repo: 'https://github.com/EbubeIreneaus/X'
     },
 
-    {
-        name: 'Twitter-like App',
-        desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-                    designed to help users with communication, Entertainment, News. The app\
-                     provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently.',
-        features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
-        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: ['Todo App/home default.jpg'], link: '', repo: ''
-    }
+    // {
+    //     name: 'Twitter-like App',
+    //     desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
+    //                 designed to help users with communication, Entertainment, News. The app\
+    //                  provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
+    //                  on Tweets efficiently.',
+    //     features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
+    //     technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
+    //     src: ['Todo App/home default.jpg'], link: '', repo: ''
+    // }
 
 ])
 
@@ -61,7 +65,7 @@ const changePrevImg = (e) => {
     prev_img.value = e.target.src
 }
 
-const portfolioScroll = () =>{
+const portfolioScroll = () => {
     let service = document.getElementById('portfolio').getBoundingClientRect()
     let portfolio_content = document.getElementsByClassName('portfolio-content')[0]
     let top, bottom, winheight
@@ -71,15 +75,15 @@ const portfolioScroll = () =>{
 
     if (top + 50 < winheight && bottom > 0) {
         portfolio_content.style.display = 'block'
-            window.removeEventListener('scroll'. portfolioScroll)
-      
+        window.removeEventListener('scroll'.portfolioScroll)
+
     }
 }
 
 onMounted(() => {
     window.addEventListener('scroll', portfolioScroll)
 })
-onBeforeUnmount(()=>{
+onBeforeUnmount(() => {
     window.addEventListener('scroll', portfolioScroll)
 })
 </script>
@@ -103,42 +107,57 @@ onBeforeUnmount(()=>{
             </div>
 
         </div>
-        <div class="modal d-block " tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-            v-if="dModal">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content animate__animated animate__zoomIn">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-primiary text-hover-secondary" id="modalTitleId">{{ project.name
-                        }}</h5>
-                        <button type="button" class="btn-close text-light" @click="dModal = false"></button>
+        <div class="cmodal " v-if="dModal">
+
+         
+            <div class="modal-body ">
+                <div class="modal-header">
+                <h5 class="modal-title text-primary text-hover-secondary px-3" id="modalTitleId">{{ project.name
+                }}</h5>
+                <button type="button" class="btn-close text-light" @click="dModal = false"></button>
+            </div>
+
+                <div class="cont d-flex flex-lg-row flex-column gap-3 ">
+                    <div class="d-flex flex-lg-column flex-row gap-3 img-grid ">
+
+                        <img :src="`/images/${media}`" @click="changePrevImg($event)" class="py-3 shadow-lg" alt=""
+                            v-for="(media, index) in project.src" :key="index">
+
                     </div>
-                    <div class="modal-body d-flex flex-lg-row flex-column gap-3">
-                    
-                            <div class="d-flex flex-lg-column flex-row gap-3 img-grid ">
 
-                                <img :src="`/images/${media}`" @click="changePrevImg($event)" class="py-3 shadow-lg" alt=""
-                                    v-for="(media, index) in project.src" :key="index">
+                    <div class=" desc p-lg-3 ">
+                        <p class="text-secondarys">
 
-                            </div>
-                            <div class=" desc p-lg-3 ">
-                                <p class="text-secondarys">
+                            <img :src="prev_img" id="img-prev"
+                                class="float-start p-lg-2 py-1 px-2 shadow-lg animate__animated animate__zoomIn" alt="">
 
-                                    <img :src="prev_img" id="img-prev"
-                                        class="float-start p-lg-2 py-1 px-2 shadow-lg animate__animated animate__zoomIn" alt="">
+                            {{
+                                project.desc }}
+                        </p>
+                        <ul class="d-flex  mt-2 flex-wrap"><b class="text-primary py-2">Features:</b>
+                            <li v-for="(ft, index) in project.features" :key="index" class="px-3 py-2 text-secondary">{{
+                                ft }}</li>
 
-                                    {{
-                                        medias[2].desc }}
-                                </p>
-                            </div>
-                     
-                    </div>
-                    <div class="modal-footer">
-                        <a href="" class="btn  text-hover-secondary"><i class="fa fa-eye"></i> view</a>
-                        <a href="" class="btn  text-hover-secondary"><i class="fa-brands fa-github"></i>
-                            git repo</a>
+                        </ul>
+
+                        <ul class="d-flex  mt-2 flex-wrap"><b class="text-primary py-2">Tech:</b>
+                            <li v-for="(ft, index) in project.technologies" :key="index" class="px-3 py-2 text-secondary">{{
+                                ft }}</li>
+
+                        </ul>
                     </div>
                 </div>
+
+                <div class="modal-footer ">
+                    <a :href="project.link" target="_blank" class="btn text-primary  text-hover-secondary"><i
+                            class="fa fa-eye"></i>
+                        view</a>
+                    <a :href="project.repo" target="_blank" class="btn text-primary text-hover-secondary"><i
+                            class="fa-brands fa-github"></i>
+                        git repo</a>
+                </div>
             </div>
+
         </div>
 
 
@@ -148,15 +167,16 @@ onBeforeUnmount(()=>{
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
     ::-webkit-scrollbar 
-        width: 7px
+        width: 2px !important
+        height: 2px
     
 
     ::-webkit-scrollbar-track 
-        background-color: white
+        background-color: $primary
     
 
     ::-webkit-scrollbar-thumb 
-        background-color: whitesmoke
+        background-color: $secondary
         border-radius: 40px
     
 
@@ -183,24 +203,46 @@ onBeforeUnmount(()=>{
                 .action-bar
                     scale: 1
 
-    .modal
-        background-color: transparentize($bg, .1)
-        .modal-dialog
-            .modal-content
-                // background-color:$bg
-                .modal-body
+    .cmodal
+        height: 100vh
+        width: 100vw
+        position: fixed
+        left: 0
+        top: 0
+        z-index: 9999
+        background-color: transparentize($bg, .5)
+        
+        .modal-body
+                background-color: $bg
 
-                        .img-grid
-                            padding: 15px
-                            overflow: scroll
+                width: 80%
+                height: 90%
+                margin: 2.5% auto
+                padding: 10px
+                box-shadow: 0 0 10px 0 $primary
+              
+                .modal-header, .modal-footer
+                    height: 10%
+                .cont
+                    height: 80%
 
-                        .desc
-                            p
-                                img
-                                    width: 100%
-                                    padding: 4px
-                                    margin-bottom:10px
-                        
+                    .img-grid
+                        width: 20%
+                        height: 100%
+                        padding: 15px
+                        overflow-y: scroll
+
+
+                    .desc
+                        width:80%
+                        overflow-y: scroll
+                        p
+                            color: $primary
+                            img
+                                width: 100%
+                                padding: 4px
+                                margin-bottom:10px
+                    
 
 // .v-enter-active
 //     animation-name: 'zoomIn'
@@ -211,10 +253,30 @@ onBeforeUnmount(()=>{
             grid-template-columns: 50% 50%
             padding: 0 1.5em
     
-    .desc
-        p
-            img
-                width: 100%
+    .modal-body
+        width: 90% !important
+        margin-top: 5% !important
+        .modal-header, .modal-footer
+            height: 10%
+        .cont
+            height: 80%
+
+            .img-grid
+                width: 100% !important
+                max-height: 30% !important
+                overflow-x: scroll !important
+                overflow-y: hidden !important
+                padding: 0 !important
+
+
+            .desc
+                width:100% !important
+                overflow-x: hidden !important
+
+                ul
+                    padding: 0
+                
+              
 
             
 

@@ -15,21 +15,21 @@ onMounted(() => {
     <main>
         <div class="layout-bar">
             <header>
-                <div class="head-1 p-2 d-md-flex d-none justify-content-between align-items-center">
+                <div class="head-1 py-2 px-3 d-md-flex d-none justify-content-between align-items-center">
                     <button class="btn bg-primary text-large text-light bg-hover-secondary ms-lg-3">contact</button>
                     <social-icons />
                 </div>
 
                 <nav class="p-3 animate__animated" id="nav">
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="logo text-primary ps-lg-5">
+                        <div class="logo text-primary text-hover-secondary ps-lg-5">
                             <h2>Ireneaus</h2>
                         </div>
 
                         <div class="nav-bar-flex d-flex h-100 align-items-center ">
                             <button class="btn bg-primary text-light text-hover-secondary d-lg-none"  data-bs-toggle="offcanvas" data-bs-target="#demo">
                                 <i class="fa fa-bars"></i></button>
-                            <ul class="d-lg-flex d-none mt-2">
+                            <ul class="d-lg-flex d-none mt-2 ">
                                 <li class=""><router-link to="#home">Home</router-link></li>
                                 <li class=""><router-link to="#about">About</router-link></li>
                                 <li class=""><router-link to="#services">Service</router-link></li>
@@ -43,7 +43,7 @@ onMounted(() => {
                 </nav>
 
             </header>
-            <div class="offcanvas show offcanvas-end" id="demo">
+            <div class="offcanvas offcanvas-end"   id="demo">
                 <div class="offcanvas-header">
                     <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i class="fa-solid fa-close fa-xl text-primary text-hover-secondary"></i>
