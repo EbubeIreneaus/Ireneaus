@@ -1,13 +1,13 @@
 <script  setup>
 const text = ref('')
-const txt_arr = ['am a Front-End developer', 
-'have a grasp Knowledge of Back-End', 'can design wordpress website for you!']
+const txt_arr = ['I\'m a Front-End developer', 
+'I have a grasp Knowledge of Back-End', 'I\'m a Full-Stack Developer', 'I can design wordpress website for you!']
 const index = ref(0)
 const char = ref(0)
 const sec = 100
 var timeout;
 const autoText = () =>{
-    if (index.value < 3) {
+    if (index.value < 4) {
         let txt = txt_arr[index.value]
         text.value = text.value + txt[char.value]
         char.value++
@@ -50,9 +50,9 @@ onBeforeMount(()=>{
                 <div class="text-content">
                     <h2 class="text-primary animate__animated animate__slideInLeft">Okigwe Ebube Ireneaus</h2>
                     <h3 class="text-secondary ps-lg-4 animate__animated animate__slideInRight">
-                       I {{ text }} <span class="fa-solid fa-beat">|</span></h3>
+                       {{ text }} <span class="fa-solid fa-beat">|</span></h3>
                        <p class="mt-5">
-                        <router-link to="/contact" class="btn text-secondary  px-4 py-2"> contact me</router-link>
+                        <router-link to="#contact" class="btn text-secondary  px-4 py-2"> contact me</router-link>
                        </p>
                 </div>
 

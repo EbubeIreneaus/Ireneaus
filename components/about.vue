@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
                     <div class="about-me-txt p-lg-5 ">
                         <p class="text-light">
                             <img src="~/assets/img/ebube1.jpg" alt="" class="mx-md-3 mb-lg-0 mb-4 ">
-                            <span class="txt">Passionate Frontend Developer with a focus on creating seamless web applications. Proficient in
+                            <span class="txt">Passionate Full-Stack Developer with a focus on creating seamless web applications. Proficient in
                             <span class="skill-txt">HTML</span>, <span class="skill-txt">CSS</span>,
                             <span class="skill-txt">Bootstrap</span> and <span class="skill-txt">JavaScript</span>, I
                             specialize in crafting visually appealing and responsive
@@ -148,23 +148,23 @@ onBeforeUnmount(() => {
                             <div class="col-lg-6 col-12">
                                 <b>PHP</b>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w70">
-                                        70%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w90">
+                                        90%</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <b>Django</b>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w50">
-                                        50%
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w95">
+                                        95%
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <b>MYSQL</b>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w50">
-                                        50%</div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w90">
+                                        90%</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
