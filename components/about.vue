@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
                         </p>
                         <p class="col-lg-6 col-12">
                             <i class="fa-solid fa-angle-right"></i>
-                            <b> Website</b> <span>www.ireneaus.com</span>
+                            <b> Website</b> <span>https://ireneaus.netlify.app</span>
                         </p>
                         <p class="col-lg-6 col-12">
                             <i class="fa-solid fa-angle-right"></i>
