@@ -72,7 +72,7 @@ onMounted(() => {
         </div>
 
         <footer>
-            <div class="w-100 footer text-primary shadow-lg py-3">
+            <div class="w-100 footer text-primary shadow-lg ">
                 &copy;2023 Ebube Ireneaus
             </div>
         </footer>
@@ -127,7 +127,8 @@ header
             
 .footer
     display: grid
-    place-items: center     
+    place-items: center
+    padding: 30px 0 
 
            
 </style>
