@@ -37,7 +37,7 @@ const contactScroll = () =>{
     bottom = contact.bottom
     winheight = window.innerHeight
 
-    if (top + 50 < winheight && bottom > 0) {
+    if (top < winheight && bottom > 0) {
         contact_content.style.display = 'block'
             window.removeEventListener('scroll'. contactScroll)
       

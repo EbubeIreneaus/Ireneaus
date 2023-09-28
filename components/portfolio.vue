@@ -73,7 +73,7 @@ const portfolioScroll = () => {
     bottom = service.bottom
     winheight = window.innerHeight
 
-    if (top + 50 < winheight && bottom > 0) {
+    if (top < winheight && bottom > 0) {
         portfolio_content.style.display = 'block'
         window.removeEventListener('scroll'.portfolioScroll)
 
@@ -118,9 +118,9 @@ onBeforeUnmount(() => {
             </div>
 
                 <div class="cont d-flex flex-lg-row flex-column gap-3 ">
-                    <div class="d-flex flex-lg-column flex-row gap-3 img-grid ">
+                    <div class="d-flex flex-lg-column flex-row gap-2 img-grid ">
 
-                        <img :src="`/images/${media}`" @click="changePrevImg($event)" class="py-3 shadow-lg" alt=""
+                        <img :src="`/images/${media}`" @click="changePrevImg($event)" class="py-lg-3 py-1 shadow-lg" alt=""
                             v-for="(media, index) in project.src" :key="index">
 
                     </div>
@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
     
     .modal-body
         width: 90% !important
-        margin-top: 5% !important
+        margin-top: 7% !important
         .modal-header, .modal-footer
             height: 10%
         .cont
@@ -263,10 +263,11 @@ onBeforeUnmount(() => {
 
             .img-grid
                 width: 100% !important
-                max-height: 30% !important
+                max-height: 10% !important
                 overflow-x: scroll !important
                 overflow-y: hidden !important
                 padding: 0 !important
+                margin: 0 !important
 
 
             .desc

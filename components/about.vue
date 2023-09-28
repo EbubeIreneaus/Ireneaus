@@ -9,7 +9,7 @@ const aboutScroll = () =>{
     bottom = about.bottom
     winheight = window.innerHeight
 
-    if (top + 50 < winheight && bottom > 0) {
+    if (top < winheight && bottom > 0) {
         about_content.style.display = 'block'
         if (skillTop.top + 100 < winheight && skillTop.bottom > 0  ) {
             for (const progress_bar of p_bar) {
