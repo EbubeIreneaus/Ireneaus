@@ -7,7 +7,7 @@ const servicesScroll = () =>{
     bottom = service.bottom
     winheight = window.innerHeight
 
-    if (top + 200 < winheight && bottom > 0) {
+    if (top + 100 < winheight && bottom > 0) {
         service_content.style.display = 'block'
             window.removeEventListener('scroll'. servicesScroll)
       

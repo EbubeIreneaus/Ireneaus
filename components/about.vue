@@ -1,7 +1,7 @@
 <script  setup>
 const aboutScroll = () =>{
     let about = document.getElementById('about').getBoundingClientRect()
-    let skills = document.getElementsByClassName('skills')[0]
+    let p_bar = document.getElementsByClassName('progress-bar')
     let skillTop = document.getElementsByClassName('skillTop')[0].getBoundingClientRect()
     let about_content = document.getElementsByClassName('about-content')[0]
     let top, bottom, winheight
@@ -9,10 +9,12 @@ const aboutScroll = () =>{
     bottom = about.bottom
     winheight = window.innerHeight
 
-    if (top + 200 < winheight && bottom > 0) {
+    if (top + 100 < winheight && bottom > 0) {
         about_content.style.display = 'block'
         if (skillTop.top + 100 < winheight && skillTop.bottom > 0  ) {
-            skills.classList.remove('d-none')
+            for (const progress_bar of p_bar) {
+                progress_bar.style.display="block"
+            }
             window.removeEventListener('scroll'. aboutScroll)
         }
     }
@@ -98,7 +100,7 @@ onBeforeUnmount(() => {
                         </p>
                     </div>
                     <div class="w-100 skillTop">
-                        <div class=" row skills d-none">
+                        <div class=" row skills ">
                             <div class="col-lg-6 col-12">
                                 <b>HTML</b>
                                 <div class="progress">
@@ -221,6 +223,7 @@ onBeforeUnmount(() => {
         .progress-bar
             background-color: $secondary
             animation: slideInLeft .8s ease 
+            display: none
            
         .w100
             width: 100%

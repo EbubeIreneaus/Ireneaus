@@ -7,7 +7,7 @@ const resumeScroll = () =>{
     bottom = service.bottom
     winheight = window.innerHeight
 
-    if (top + 200 < winheight && bottom > 0) {
+    if (top + 100 < winheight && bottom > 0) {
         resume_content.style.display = 'block'
             window.removeEventListener('scroll'. resumeScroll)
       
