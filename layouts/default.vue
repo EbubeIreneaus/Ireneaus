@@ -1,8 +1,8 @@
 <script setup>
 const stickNav = () => {
     if (window.scrollY > 500) {
-       document.getElementById('nav').classList.add('sticky')
-    }else{
+        document.getElementById('nav').classList.add('sticky')
+    } else {
         document.getElementById('nav').classList.remove('sticky')
     }
 }
@@ -27,7 +27,7 @@ onMounted(() => {
                         </div>
 
                         <div class="nav-bar-flex d-flex h-100 align-items-center ">
-                            <button class="btn bg-primary text-light text-hover-secondary d-lg-none">
+                            <button class="btn bg-primary text-light text-hover-secondary d-lg-none"  data-bs-toggle="offcanvas" data-bs-target="#demo">
                                 <i class="fa fa-bars"></i></button>
                             <ul class="d-lg-flex d-none mt-2">
                                 <li class=""><router-link to="#home">Home</router-link></li>
@@ -41,7 +41,30 @@ onMounted(() => {
                         </div>
                     </div>
                 </nav>
+
             </header>
+            <div class="offcanvas show offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-close fa-xl text-primary text-hover-secondary"></i>
+                    </button>
+                    <h5 class="offcanvas-title text-secondary px-3" id="staticBackdropLabel">Ireneaus</h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="d-lg-flex flex-column mt-2">
+                        <li class=""><router-link to="#home">Home</router-link></li>
+                        <li class=""><router-link to="#about">About</router-link></li>
+                        <li class=""><router-link to="#services">Service</router-link></li>
+                        <li class=""><router-link to="#resume">Resume</router-link></li>
+                        <li class=""><router-link to="#portfolio">my Work</router-link></li>
+                        <li class=""><router-link to="#contact">Contact</router-link></li>
+
+                    </ul>
+                    <div class="ms-2">
+                        <social-icons />
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="slot">
@@ -50,7 +73,7 @@ onMounted(() => {
 
         <footer>
             <div class="w-100 footer text-primary shadow-lg py-3">
-               &copy;2023 Ebube Ireneaus
+                &copy;2023 Ebube Ireneaus
             </div>
         </footer>
     </main>
@@ -88,8 +111,17 @@ header
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2)
     background-color: transparentize($bg, .1)
 
-
-            
+.offcanvas
+    background-color: transparentize($bg, .2)
+    .offcanvas-body
+        ul
+            padding: 0
+            li
+                padding: 15px 20px
+                a
+                    color: $primary
+                    &:hover
+                        color: $secondary
 // .router-link-active
 //     color: $secondary !important
             
