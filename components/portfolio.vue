@@ -13,8 +13,8 @@ const medias = ref([
          innovation and the art of storytelling through technology,",
         features: ['Gallery', 'About me', 'What I offer', 'my resume', 'my skills'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js'],
-        src: ['portfolio/home.png','portfolio/about.png',
-        'portfolio/service.png','portfolio/resume.png','portfolio/contact.png'], 
+        src: ['portfolio/home.png', 'portfolio/about.png',
+            'portfolio/service.png', 'portfolio/resume.png', 'portfolio/contact.png'],
         link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
 
@@ -36,23 +36,38 @@ const medias = ref([
         desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
                     designed to help users with communication, Entertainment, News. The app\
                      provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently. this project has not been hosted online, cause of the server side(python django) deployment',
-        features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
+                     on Tweets efficiently. ',
+        features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication', 'Profile...'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
         src: ['twitter app/home.png', 'twitter app/register.png', 'twitter app/singleTweet.png', 'twitter app/profile.png'],
-         link: '', repo: 'https://github.com/EbubeIreneaus/X'
+        link: 'https://twitter-xx.netlify.app/', repo: 'https://github.com/EbubeIreneaus/X'
     },
 
-    // {
-    //     name: 'Twitter-like App',
-    //     desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-    //                 designed to help users with communication, Entertainment, News. The app\
-    //                  provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-    //                  on Tweets efficiently.',
-    //     features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication'],
-    //     technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-    //     src: ['Todo App/home default.jpg'], link: '', repo: ''
-    // }
+    {
+        name: "Oki's Repair",
+        desc: 'Okis Repair is a static website, I designed it to boost my front end experiece, it has no \
+        functionality, only design. feel free to check it out',
+        features: [],
+        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxtJs'],
+        src: ['OkisRepair/home.png','OkisRepair/home2.png','OkisRepair/bk-service.png',
+        'OkisRepair/contact-us.png','OkisRepair/footer.png',
+    ],
+     link: 'https://okisrepair.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-repair'
+    },
+
+    {
+        name: 'Isls Url Shortener',
+        desc: "just completed another project, URL shortener with QRCode generator, with python (django) \
+        and javascript (vue.js, nuxt.js), it was an awesome experience developing this project.\
+The more I go, the more I see more reason to love python due to it numerous library that has made \
+ tough task easy.Feel free to review this project 🙏 💪",
+        features: ['Link Shortener', 'QRCode Generator'],
+        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js', 'python', 'django'],
+        src: ['url shortener/Url-Shortener.png', 'url shortener/Url-Shortener home2.png','url shortener/qr_img.png',
+            'url shortener/qr_generator page.png', 'url shortener/qr-code modal.png'],
+        link: 'https://isls.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
+    },
+
 
 ])
 
@@ -111,13 +126,13 @@ onBeforeUnmount(() => {
         </div>
         <div class="cmodal " v-if="dModal">
 
-         
+
             <div class="modal-body ">
                 <div class="modal-header">
-                <h5 class="modal-title text-primary text-hover-secondary px-3" id="modalTitleId">{{ project.name
-                }}</h5>
-                <button type="button" class="btn-close text-light" @click="dModal = false"></button>
-            </div>
+                    <h5 class="modal-title text-primary text-hover-secondary px-3" id="modalTitleId">{{ project.name
+                    }}</h5>
+                    <button type="button" class="btn-close text-light" @click="dModal = false"></button>
+                </div>
 
                 <div class="cont d-flex flex-lg-row flex-column gap-3 ">
                     <div class="d-flex flex-lg-column flex-row gap-2 img-grid ">
@@ -199,7 +214,7 @@ onBeforeUnmount(() => {
                 background-color: transparentize($primary, .7)
                 scale: 0
                 transition: all .5s ease
-            img
+            // img
 
             &:hover
                 .action-bar
