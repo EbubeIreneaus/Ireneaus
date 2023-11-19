@@ -98,6 +98,14 @@
                                     data-aos="slide-right">
                                         90%</div>
                                 </div>
+                            </div> 
+                            <div class="col-lg-6 col-12">
+                                <b>Tailwind css</b>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w90"
+                                    data-aos="slide-right">
+                                        90%</div>
+                                </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <b>JavaScript</b>
