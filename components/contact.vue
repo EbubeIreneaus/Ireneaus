@@ -29,32 +29,11 @@ const sendMail = async (e) => {
      
 }
 
-const contactScroll = () =>{
-    let contact = document.getElementById('contact').getBoundingClientRect()
-    let contact_content = document.getElementsByClassName('contact-content')[0]
-    let top, bottom, winheight
-    top = contact.top
-    bottom = contact.bottom
-    winheight = window.innerHeight
-
-    if (top < winheight && bottom > 0) {
-        contact_content.style.display = 'block'
-            window.removeEventListener('scroll'. contactScroll)
-      
-    }
-}
-
-onMounted(() => {
-    window.addEventListener('scroll', contactScroll)
-})
-onBeforeUnmount(()=>{
-    window.addEventListener('scroll', contactScroll)
-})
 </script>
 
 <template>
     <section id="contact" class="contact section-show mb-5">
-        <div class="contact-content">
+        <div class="contact-content" data-aos="fade-up">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2">Contact</h2>
             </div>
@@ -62,7 +41,7 @@ onBeforeUnmount(()=>{
 
                 <div class="row stcw mt-2">
     
-                    <div class="col-md-6 d-flex align-items-stretch ">
+                    <div class="col-md-6 d-flex align-items-stretch " data-aos="slide-right">
                         <div class="info-box ">
                             <i class="fa-solid fa-map"></i>
                             <h3>My Address</h3>
@@ -70,7 +49,7 @@ onBeforeUnmount(()=>{
                         </div>
                     </div>
     
-                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch ">
+                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch " data-aos="slide-down">
                         <div class="info-box ">
                             <i class="fa-brands fashare-alt"></i>
                             <h3>Social Profiles</h3>
@@ -81,14 +60,14 @@ onBeforeUnmount(()=>{
                         </div>
                     </div>
     
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="slide-right">
                         <div class="info-box">
                             <i class="fa-solid fa-envelope"></i>
                             <h3>Email Me</h3>
                             <p>alfredebube7@gmail.com</p>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                    <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-up">
                         <div class="info-box">
                             <i class="fa fa-phone"></i>
                             <h3>Call Me</h3>
@@ -97,7 +76,7 @@ onBeforeUnmount(()=>{
                     </div>
                 </div>
                 <div class="d-flex flex-lg-row flex-column gap-3 mt-3 form-sec">
-                    <div class="w-100">
+                    <div class="w-100" data-aos="slide-right">
                         <iframe class="w-100 h-100"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126051.79072541997!2d7.270728904779625!3d9.143772644817815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf3367a61f05%3A0xc111bee746fb6245!2sKubwa%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1695727834787!5m2!1sen!2sng"
                             style="border:0;" allowfullscreen="" loading="lazy"
@@ -105,7 +84,7 @@ onBeforeUnmount(()=>{
                     </div>
     
     
-                    <form @submit.prevent="sendMail($event)" ref="fm" class="w-100">
+                    <form @submit.prevent="sendMail($event)" ref="fm" class="w-100" data-aos="slide-left">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" v-model="form.fullName" class="form-control" id="name"
@@ -128,7 +107,7 @@ onBeforeUnmount(()=>{
                             <!-- error msg -->
                             <small ref="errorMsg"></small>
                         </div>
-                        <div class=""><button type="submit" class="btn pe-2 ps-2 text-secondary" ref="closeBtn">Send
+                        <div class="" data-aos="slide-up"><button type="submit" class="btn pe-2 ps-2 text-secondary" ref="closeBtn">Send
                                 Message</button></div>
                     </form>
     
@@ -172,9 +151,6 @@ onBeforeUnmount(()=>{
     @import "~/assets/css/_color.sass"   
     button
         outline: 1px solid $primary  
-
-    .contact-content
-        display: none
 
     .cont
      

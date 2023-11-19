@@ -1,35 +1,15 @@
 <script  setup>
-const resumeScroll = () =>{
-    let service = document.getElementById('resume').getBoundingClientRect()
-    let resume_content = document.getElementsByClassName('resume-content')[0]
-    let top, bottom, winheight
-    top = service.top
-    bottom = service.bottom
-    winheight = window.innerHeight
 
-    if (top < winheight && bottom > 0) {
-        resume_content.style.display = 'block'
-            window.removeEventListener('scroll'. resumeScroll)
-      
-    }
-}
-
-onMounted(() => {
-    window.addEventListener('scroll', resumeScroll)
-})
-onBeforeUnmount(()=>{
-    window.addEventListener('scroll', resumeScroll)
-})
 </script>
 
 <template>
     <div id="resume" class="resume">
-        <div class="resume-content">
+        <div class="resume-content" data-aos="fade-up">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Resume</h2>
             </div>
 
-            <div class="mt-3 mb-3 text-secondary px-lg-5 px-3">
+            <div class="mt-3 mb-3 text-secondary px-lg-5 px-3" data-aos="slide-left">
                 <span>I am an active participant in the open-source community,
                     contributing to projects that align with my interests and values. Giving back to the developer
                     community is one of the ways I stay connected and grow as a developer.</span>
@@ -49,12 +29,12 @@ onBeforeUnmount(()=>{
                             On the server-side, I'm well-versed in PHP and Django,
                             aenabling me to create robust and efficient back-end functionalities.</small>
                     </div>
-                    <h3 class="ms-3 text-primary">Education</h3>
+                    <h3 class="ms-3 text-primary" >Education</h3>
                     <div class="anm h-100">
                         <div class="s-c border"></div>
 
                     </div>
-                    <div class="ms-4">
+                    <div class="ms-4" data-aos="slide-right">
                         <h5 class="text-info ms-2 text-primary">B.Sc Nautical Secience</h5>
                         <div class="badge border p-1 m-2 text-secondary">2020 - 2024</div>
                         <address class="text-secondary">
@@ -72,7 +52,7 @@ onBeforeUnmount(()=>{
                     <div class="ms-4">
                         <h5 class="text-info ms-2 text-primary">Web Development</h5>
                         <ul>
-                            <li>
+                            <li data-aos="slide-left">
                                 <details class="text-secondary " open>
                                     <summary>Project - GoldenWealths.com (2020)</summary>
                                     <small>In 2020, I had the privilege of collaborating
@@ -80,6 +60,36 @@ onBeforeUnmount(()=>{
                                         client,
                                         www.goldenwealths.com, to create an innovative and user-centric web
                                         platform. As the sole Full Stack Developer for this project, I undertook
+                                        the responsibility of designing, developing, and delivering a dynamic
+                                        website that catered to the unique needs of the financial services
+                                        industry.</small>
+                                </details>
+
+
+                            </li><br>
+                            <li data-aos="slide-left">
+                                <details class="text-secondary">
+                                    <summary>Project - Spring Field (2023)</summary>
+                                    <small>In 2020, I had the privilege of collaborating
+                                        with a valued
+                                        client,
+                                        www.springfieldinvest.com, to create an innovative and user-centric web
+                                        platform. As the sole Full Stack Developer for this project, I undertook
+                                        the responsibility of designing, developing, and delivering a dynamic
+                                        website that catered to the unique needs of the financial services
+                                        industry.</small>
+                                </details>
+
+
+                            </li><br>
+                            <li data-aos="slide-left">
+                                <details class="text-secondary ">
+                                    <summary>Project - Digital Assets (2023)</summary>
+                                    <small>In 2023, I had the privilege of collaborating
+                                        with another valued
+                                        client,
+                                        www.digitalassetsgrowth.com, to create an innovative and user-centric web
+                                        applicaton. As the sole Full Stack Developer for this project, I undertook
                                         the responsibility of designing, developing, and delivering a dynamic
                                         website that catered to the unique needs of the financial services
                                         industry.</small>
@@ -99,8 +109,7 @@ onBeforeUnmount(()=>{
 
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
-.resume-content
-    display: none
+
 .anm 
     position: absolute
 /* overflow: hidden; */

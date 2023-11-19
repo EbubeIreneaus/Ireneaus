@@ -1,25 +1,5 @@
 <script setup>
-const servicesScroll = () =>{
-    let service = document.getElementById('services').getBoundingClientRect()
-    let service_content = document.getElementsByClassName('service-content')[0]
-    let top, bottom, winheight
-    top = service.top
-    bottom = service.bottom
-    winheight = window.innerHeight
 
-    if (top < winheight && bottom > 0) {
-        service_content.style.display = 'block'
-            window.removeEventListener('scroll'. servicesScroll)
-      
-    }
-}
-
-onMounted(() => {
-    window.addEventListener('scroll', servicesScroll)
-})
-onBeforeUnmount(()=>{
-    window.addEventListener('scroll', servicesScroll)
-})
 </script>
 
 <template>
@@ -35,7 +15,7 @@ onBeforeUnmount(()=>{
 
                             <!-- Start Single Service -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="single-service   animate__animated animate__slideInRight animate__delay-1s">
+                                <div class="single-service" data-aos="slide-right">
                                     <div class="part-1">
                                         <i class="fab fa-500px"></i>
                                         <h3 class="title">Front End Development</h3>
@@ -54,7 +34,7 @@ onBeforeUnmount(()=>{
                             </div>
                                    <!-- Start Single Service -->
                                    <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__slideInDown animate__delay-1s">
+                                <div class="single-service " data-aos="slide-up">
                                     <div class="part-1">
                                         <i class="fab fa-angellist"></i>
                                         <h3 class="title">Back End Development</h3>
@@ -77,7 +57,7 @@ onBeforeUnmount(()=>{
                          
                                <!-- Start Single Service -->
                                <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__slideInLeft animate__delay-1s">
+                                <div class="single-service" data-aos="slide-left">
                                     <div class="part-1">
                                         <i class="fas fa-award"></i>
                                         <h3 class="title">Full Stack Development</h3>
@@ -95,7 +75,7 @@ onBeforeUnmount(()=>{
           
                                <!-- Start Single Service -->
                                <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__zoomIn animate__delay-1s">
+                                <div class="single-service " data-aos="slide-up">
                                     <div class="part-1">
                                         <i class="fab fa-asymmetrik"></i>
                                         <h3 class="title">SEO Optimization</h3>
@@ -135,7 +115,7 @@ onBeforeUnmount(()=>{
          
                             <!-- Start Single Service -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="single-service animate__animated animate__rollIn animate__delay-1s">
+                                <div class="single-service " data-aos="slide-right">
                                     <div class="part-1">
                                         <i class="fab fa-canadian-maple-leaf"></i>
                                         <h3 class="title">Freelancing</h3>
@@ -159,8 +139,7 @@ onBeforeUnmount(()=>{
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
 .services
-    .service-content
-        display: none
+
     .single-service
         margin-top: 40px
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)

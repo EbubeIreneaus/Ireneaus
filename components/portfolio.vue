@@ -17,6 +17,18 @@ const medias = ref([
             'portfolio/service.png', 'portfolio/resume.png', 'portfolio/contact.png'],
         link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
+    {
+        name: 'Digital Assets',
+        desc: "thisis one of numerious website I built for my client. Digital Assets is a crypto and forex trading \
+        investment plartform, I was opportuned to carry out this project of building thier full stack web application.\
+         it was a great experience for me during the process of developing https://digitalassetsgrowth.com",
+        features: ['Home', 'About Company', 'Pricing', 'Service', 'Registeration/Authentication', 'user dashboard'],
+        technologies: ['HTML', 'CSS', "Tailwind CSS", "JS", "VueJs/Nuxt.js", 'python/Django Rest Famework'],
+        src: ['digital Assets/home.jpg', 'digital Assets/yoe.png',
+            'digital Assets/003.png', 'digital Assets/company.png', 'digital Assets/contact.png',
+            'digital Assets/pricing.png','digital Assets/service.png'],
+        link: 'https://digitalassetsgrowth.com', repo: '#'
+    },
 
     {
         name: 'Todo App',
@@ -82,37 +94,16 @@ const changePrevImg = (e) => {
     prev_img.value = e.target.src
 }
 
-const portfolioScroll = () => {
-    let service = document.getElementById('portfolio').getBoundingClientRect()
-    let portfolio_content = document.getElementsByClassName('portfolio-content')[0]
-    let top, bottom, winheight
-    top = service.top
-    bottom = service.bottom
-    winheight = window.innerHeight
-
-    if (top < winheight && bottom > 0) {
-        portfolio_content.style.display = 'block'
-        window.removeEventListener('scroll'.portfolioScroll)
-
-    }
-}
-
-onMounted(() => {
-    window.addEventListener('scroll', portfolioScroll)
-})
-onBeforeUnmount(() => {
-    window.addEventListener('scroll', portfolioScroll)
-})
 </script>
  
 <template>
     <div id="portfolio" class="portfolio mt-5">
-        <div class="portfolio-content">
+        <div class="portfolio-content" data-aos="fade-up">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
 
-            <div class="port-container  mt-3 ">
+            <div class="port-container  mt-3 " data-aos="slide-down">
                 <div class=" media-sec position-relative mb-3" v-for="(media, index) in medias" :key="index">
                     <div class=" position-absolute w-100 h-100 action-bar d-flex justify-content-center align-items-center">
                         <button class=" fa-2xl text-dark btn" @click="openModal(index)">
@@ -184,7 +175,7 @@ onBeforeUnmount(() => {
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
     ::-webkit-scrollbar 
-        width: 2px !important
+        width: 4px !important
         height: 2px
     
 
@@ -197,8 +188,7 @@ onBeforeUnmount(() => {
         border-radius: 40px
     
 
-    .portfolio-content
-        display: none
+   
         
 
     .port-container

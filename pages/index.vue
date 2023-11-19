@@ -79,7 +79,7 @@ onBeforeMount(()=>{
         display: grid
         place-items: center
         background:
-            image: url('~/assets/img/ebube1.jpg')
+            image: url('~/assets/img/bg.jpg')
             repeat: no-repeat
             size: cover
             position: center
@@ -90,13 +90,13 @@ onBeforeMount(()=>{
             width: 100%
             height: 100%
             top: 0
-            background-color: rgba(0,0, 0, .7)
+            background-color: rgba(0,0, 0, .5)
         .content
             position: relative
-            z-index: 9
+            z-index: 9999
             .text-content
                 h3
-                    text-shadow: 20px 30px 1px transparentize($secondary, .5)
+                    text-shadow: 20px 30px 1px transparentize($secondary, .9)
                 a
                     border: 1px solid $primary
             
