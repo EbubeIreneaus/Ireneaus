@@ -80,11 +80,13 @@ onBeforeMount(() => {
         width: 100vw
         height: 100vh
         position: relative
-        display: grid
-        place-items: center
+        display: flex
+        justify-content: center
+        align-items: center
         img
             width: 100vw !important
             height: 100vh !important
+            object-fit: cover 
             object-position: center
         
         &::before
@@ -110,7 +112,7 @@ onBeforeMount(() => {
                 .code-img
                   
                     img
-                        width: 250px
+                        width: 250px !important
                         height: 250px !important
                         border: 1px solid transparentize($secondary,.7 )
                         box-shadow: 4px 4px 2px transparentize($primary,.7 )
