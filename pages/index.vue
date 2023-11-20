@@ -85,7 +85,7 @@ onBeforeMount(() => {
         img
             width: 100vw !important
             height: 100vh !important
-            object-fit: cover
+            // object-fit: cover
             object-position: center
         
         &::before
