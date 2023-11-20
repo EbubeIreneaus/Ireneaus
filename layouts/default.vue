@@ -33,12 +33,12 @@ onMounted(() => {
                                 data-bs-toggle="offcanvas" data-bs-target="#demo">
                                 <i class="fa fa-bars"></i></button>
                             <ul class="d-lg-flex d-none mt-2 ">
-                                <li class=""><router-link to="#home">Home</router-link></li>
-                                <li class=""><router-link to="#about">About</router-link></li>
-                                <li class=""><router-link to="#services">Service</router-link></li>
-                                <li class=""><router-link to="#resume">Resume</router-link></li>
-                                <li class=""><router-link to="#portfolio">my Work</router-link></li>
-                                <li class=""><router-link to="#contact">Contact</router-link></li>
+                                <li class=""><nuxt-link to="#home">Home</nuxt-link></li>
+                                <li class=""><nuxt-link to="#about">About</nuxt-link></li>
+                                <li class=""><nuxt-link to="#services">Service</nuxt-link></li>
+                                <li class=""><nuxt-link to="#resume">Resume</nuxt-link></li>
+                                <li class=""><nuxt-link to="#portfolio">my Work</nuxt-link></li>
+                                <li class=""><nuxt-link to="#contact">Contact</nuxt-link></li>
 
                             </ul>
                         </div>
@@ -55,12 +55,12 @@ onMounted(() => {
                 </div>
                 <div class="offcanvas-body">
                     <ul class="d-lg-flex flex-column mt-2">
-                        <router-link to="#home" data-bs-dismiss="offcanvas"><li Contact class="" >Home </li></router-link>
-                        <router-link to="#about" data-bs-dismiss="offcanvas"><li Contact class="" >About </li></router-link>
-                        <router-link to="#service" data-bs-dismiss="offcanvas"><li Contact class="" >Service </li></router-link>
-                        <router-link to="#resume" data-bs-dismiss="offcanvas"><li Contact class="" >Resume </li></router-link>
-                        <router-link to="#portfolio" data-bs-dismiss="offcanvas"><li Contact class="" >My work </li></router-link>
-                        <router-link to="#contact" data-bs-dismiss="offcanvas"><li Contact class="" >Contact </li></router-link>
+                        <nuxt-link to="#home" ><li Contact class="" data-bs-dismiss="offcanvas">Home </li></nuxt-link>
+                        <nuxt-link to="#about" ><li Contact class="" data-bs-dismiss="offcanvas">About </li></nuxt-link>
+                        <nuxt-link to="#service"><li Contact class=""  data-bs-dismiss="offcanvas">Service </li></nuxt-link>
+                        <nuxt-link to="#resume"><li Contact class=""  data-bs-dismiss="offcanvas" >Resume </li></nuxt-link>
+                        <nuxt-link to="#portfolio"><li Contact class=""  data-bs-dismiss="offcanvas">My work </li></nuxt-link>
+                        <nuxt-link to="#contact" ><li Contact class="" data-bs-dismiss="offcanvas">Contact </li></nuxt-link>
 
                     </ul>
                     <div class="ms-2">
@@ -125,12 +125,11 @@ header
     .offcanvas-body
         ul
             padding: 0
-            li
+            a
                 padding: 15px 20px
-                a
-                    color: $primary
-                    &:hover
-                        color: $secondary
+                color: $primary
+                &:hover
+                    color: $secondary
 // .router-link-active
 //     color: $secondary !important
             

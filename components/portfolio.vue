@@ -103,8 +103,9 @@ const changePrevImg = (e) => {
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
 
-            <div class="port-container  mt-3 " data-aos="slide-down">
-                <div class=" media-sec position-relative mb-3" v-for="(media, index) in medias" :key="index">
+            <div class="port-container  mt-3 ">
+                <div class=" media-sec position-relative mb-3" v-for="(media, index) in medias" :key="index" data-aos="slide-up"
+                :data-aos-delay="index *100">
                     <div class=" position-absolute w-100 h-100 action-bar d-flex justify-content-center align-items-center">
                         <button class=" fa-2xl text-dark btn" @click="openModal(index)">
                             <i class="fa fa-eye text-secondary"></i>
