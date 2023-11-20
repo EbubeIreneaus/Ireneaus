@@ -57,7 +57,7 @@ onMounted(() => {
                     <ul class="d-lg-flex flex-column mt-2">
                         <nuxt-link to="#home" ><li Contact class="" data-bs-dismiss="offcanvas">Home </li></nuxt-link>
                         <nuxt-link to="#about" ><li Contact class="" data-bs-dismiss="offcanvas">About </li></nuxt-link>
-                        <nuxt-link to="#service"><li Contact class=""  data-bs-dismiss="offcanvas">Service </li></nuxt-link>
+                        <nuxt-link to="#services"><li Contact class=""  data-bs-dismiss="offcanvas">Service </li></nuxt-link>
                         <nuxt-link to="#resume"><li Contact class=""  data-bs-dismiss="offcanvas" >Resume </li></nuxt-link>
                         <nuxt-link to="#portfolio"><li Contact class=""  data-bs-dismiss="offcanvas">My work </li></nuxt-link>
                         <nuxt-link to="#contact" ><li Contact class="" data-bs-dismiss="offcanvas">Contact </li></nuxt-link>
