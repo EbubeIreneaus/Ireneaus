@@ -45,7 +45,7 @@ onBeforeMount(() => {
 <template>
     <div id="home" class="main">
         <div class="section-one">
-            <img src="~/assets/img/bg.jpg" alt="">
+            <!-- <img src="~/assets/img/bg.jpg" alt=""> -->
             <div class="b-content">
 
                 <div class="w-100 d-flex justify-content-between align-items-center content px-lg-5 px-md-3 px-2">
@@ -84,11 +84,10 @@ onBeforeMount(() => {
         justify-content: center
         align-items: center
         border: 3px solid red
-        img
-            width: 100vw !important
-            height: 100vh !important
-            object-fit: cover 
-            object-position: center
+        background:
+            image: url("/bg.jpg")
+            position: center
+            size: cover
         
         &::before
             content: ''
