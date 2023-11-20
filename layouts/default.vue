@@ -28,7 +28,8 @@ onMounted(() => {
                         </div>
 
                         <div class="nav-bar-flex d-flex h-100 align-items-center ">
-                            <button class="btn bg-primary text-light text-hover-secondary d-lg-none"  data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <button class="btn bg-primary text-light text-hover-secondary d-lg-none"
+                                data-bs-toggle="offcanvas" data-bs-target="#demo">
                                 <i class="fa fa-bars"></i></button>
                             <ul class="d-lg-flex d-none mt-2 ">
                                 <li class=""><router-link to="#home">Home</router-link></li>
@@ -44,7 +45,7 @@ onMounted(() => {
                 </nav>
 
             </header>
-            <div class="offcanvas offcanvas-end"   id="demo">
+            <div class="offcanvas offcanvas-end" id="demo">
                 <div class="offcanvas-header">
                     <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i class="fa-solid fa-close fa-xl text-primary text-hover-secondary"></i>
@@ -53,12 +54,12 @@ onMounted(() => {
                 </div>
                 <div class="offcanvas-body">
                     <ul class="d-lg-flex flex-column mt-2">
-                        <li class=""><router-link to="#home">Home</router-link></li>
-                        <li class=""><router-link to="#about">About</router-link></li>
-                        <li class=""><router-link to="#services">Service</router-link></li>
-                        <li class=""><router-link to="#resume">Resume</router-link></li>
-                        <li class=""><router-link to="#portfolio">my Work</router-link></li>
-                        <li class=""><router-link to="#contact">Contact</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#home">Home</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#about">About</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#services">Service</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#resume">Resume</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#portfolio">my Work</router-link></li>
+                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#contact">Contact</router-link></li>
 
                     </ul>
                     <div class="ms-2">
@@ -69,6 +70,12 @@ onMounted(() => {
         </div>
 
         <div class="slot">
+            <div class="preloader">
+                <div class="loader">
+                    <img src="/preloader.gif" alt="">
+                    <p class="text-primary">IRENEAUS</p>
+                </div>
+            </div>
             <slot></slot>
         </div>
 
@@ -131,5 +138,30 @@ header
     place-items: center
     padding: 30px 0 
 
-           
+
+.slot
+    overflow: hidden
+
+    .preloader
+        width: 100vw
+        height: 100vh
+        z-index: 99999
+        position: fixed
+        top: 0
+        display: block
+        background-color: $bg
+
+        .loader
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            img
+                width: 150px
+                height: 150px
+                border: none
+
 </style>

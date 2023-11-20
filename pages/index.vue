@@ -93,7 +93,7 @@ onBeforeMount(()=>{
             background-color: rgba(0,0, 0, .5)
         .content
             position: relative
-            z-index: 9999
+            z-index: 99
             .text-content
                 h3
                     text-shadow: 20px 30px 1px transparentize($secondary, .9)
