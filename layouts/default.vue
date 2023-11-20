@@ -71,12 +71,12 @@ onMounted(() => {
         </div>
 
         <div class="slot">
-            <!-- <div class="preloader">
+            <div class="preloader">
                 <div class="loader">
                     <img src="/preloader.gif" alt="">
                     <p class="text-primary">IRENEAUS</p>
                 </div>
-            </div> -->
+            </div>
             <slot></slot>
         </div>
 
@@ -142,7 +142,7 @@ header
 
 .slot
     overflow: hidden
-
+    width: 100vw
     .preloader
         width: 100vw
         height: 100vh

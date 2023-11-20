@@ -77,8 +77,8 @@ onBeforeMount(() => {
 @import "~/assets/css/_color.sass"
 .main
     .section-one
-        width: 100vw
-        height: 100vh
+        width: 100vw !important
+        height: 100vh !important
         position: relative
         display: flex
         justify-content: center
