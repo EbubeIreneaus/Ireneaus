@@ -110,7 +110,7 @@ const changePrevImg = (e) => {
                             <i class="fa fa-eye text-secondary"></i>
                         </button>
                     </div>
-                    <img :src="`/images/${media.src[0]}`" class="" />
+                    <img :src="`/images/${media.src[0]}`" class="" style="object-fit: cover; object-position: center; "/>
                 </div>
             </div>
 

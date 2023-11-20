@@ -82,7 +82,6 @@ onBeforeMount(() => {
         display: flex
         justify-content: center
         align-items: center
-        border: 3px solid red
         
         img
             width: 100vw !important
