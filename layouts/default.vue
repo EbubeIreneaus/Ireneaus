@@ -17,7 +17,8 @@ onMounted(() => {
         <div class="layout-bar">
             <header>
                 <div class="head-1 py-2 px-3 d-md-flex d-none justify-content-between align-items-center">
-                    <button class="btn bg-primary text-large text-light bg-hover-secondary ms-lg-3">contact</button>
+                    <button class="btn bg-primary bg-hover-secondary ms-lg-3">
+                    <nuxt-link to="#contact" class="text-large text-light ">Contact</nuxt-link></button>
                     <social-icons />
                 </div>
 
