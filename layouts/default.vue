@@ -54,12 +54,12 @@ onMounted(() => {
                 </div>
                 <div class="offcanvas-body">
                     <ul class="d-lg-flex flex-column mt-2">
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#home">Home</router-link></li>
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#about">About</router-link></li>
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#services">Service</router-link></li>
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#resume">Resume</router-link></li>
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#portfolio">my Work</router-link></li>
-                        <li class="" data-bs-dismiss="offcanvas"><router-link to="#contact">Contact</router-link></li>
+                        <router-link to="#home" data-bs-dismiss="offcanvas"><li Contact class="" >Home </li></router-link>
+                        <router-link to="#about" data-bs-dismiss="offcanvas"><li Contact class="" >About </li></router-link>
+                        <router-link to="#service" data-bs-dismiss="offcanvas"><li Contact class="" >Service </li></router-link>
+                        <router-link to="#resume" data-bs-dismiss="offcanvas"><li Contact class="" >Resume </li></router-link>
+                        <router-link to="#portfolio" data-bs-dismiss="offcanvas"><li Contact class="" >My work </li></router-link>
+                        <router-link to="#contact" data-bs-dismiss="offcanvas"><li Contact class="" >Contact </li></router-link>
 
                     </ul>
                     <div class="ms-2">
