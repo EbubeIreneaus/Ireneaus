@@ -71,12 +71,12 @@ onMounted(() => {
         </div>
 
         <div class="slot">
-            <div class="preloader">
+            <!-- <div class="preloader">
                 <div class="loader">
                     <img src="/preloader.gif" alt="">
                     <p class="text-primary">IRENEAUS</p>
                 </div>
-            </div>
+            </div> -->
             <slot></slot>
         </div>
 
