@@ -18,6 +18,16 @@ const medias = ref([
         link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
     {
+        name: "Oki's Store",
+        desc: "",
+        features: ['Home', 'Shop', 'cart', 'checkout', 'wishlist', 'product'],
+        technologies: ['HTML', 'CSS', "Tailwindcss", "JS", "VueJs", 'nuxt.js', 'pinia'],
+        src: ['okisstore/home.png', 'okisstore/home.png','okisstore/home002.png','okisstore/home003.png',
+            'okisstore/shop.png', 'okisstore/product001.png', 'okisstore/cart.png','okisstore/wishlist.png',
+            'okisstore/checkout.png'],
+        link: 'https://okisstore.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-store'
+    },
+    {
         name: 'Digital Assets',
         desc: "thisis one of numerious website I built for my client. Digital Assets is a crypto and forex trading \
         investment plartform, I was opportuned to carry out this project of building thier full stack web application.\
@@ -137,7 +147,7 @@ const changePrevImg = (e) => {
                     <div class=" desc p-lg-3 ">
                         <p class="text-secondarys">
 
-                            <img :src="prev_img" id="img-prev"
+                            <img :src="prev_img" id="img-prev" style="object-fit:cover"
                                 class="float-start p-lg-2 py-1 px-2 shadow-lg animate__animated animate__zoomIn" alt="">
 
                             {{
@@ -176,16 +186,16 @@ const changePrevImg = (e) => {
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
     ::-webkit-scrollbar 
-        width: 4px !important
+        width: 7px !important
         height: 2px
     
 
     ::-webkit-scrollbar-track 
-        background-color: $primary
+        background-color: white
     
 
     ::-webkit-scrollbar-thumb 
-        background-color: $secondary
+        background-color: black
         border-radius: 40px
     
 
@@ -222,12 +232,13 @@ const changePrevImg = (e) => {
         
         .modal-body
                 background-color: $bg
-
-                width: 80%
+                position: abosolute
+                z-index: 9999
+                width: 90%
                 height: 90%
                 margin: 2.5% auto
                 padding: 10px
-                box-shadow: 0 0 10px 0 $primary
+                box-shadow: 0 0 2px 0 black
               
                 .modal-header, .modal-footer
                     height: 10%
@@ -240,7 +251,8 @@ const changePrevImg = (e) => {
                         padding: 15px
                         overflow-y: scroll
 
-
+                        img
+                            object-fit: 'cover'
                     .desc
                         width:80%
                         overflow-y: scroll
