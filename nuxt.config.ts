@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   app:{
     head:{
       title:'Ireneaus',
@@ -29,6 +35,7 @@ export default defineNuxtConfig({
 
   css:[
       'aos/dist/aos.css',
+      '~/assets/main.css',
       'bootstrap/dist/css/bootstrap.css',
       '@fortawesome/fontawesome-free/css/all.css',
       'animate.css/animate.min.css',

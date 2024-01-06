@@ -13,8 +13,8 @@ const medias = ref([
          innovation and the art of storytelling through technology,",
         features: ['Gallery', 'About me', 'What I offer', 'my resume', 'my skills'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js'],
-        src: ['portfolio/home.png', 'portfolio/about.png',
-            'portfolio/service.png', 'portfolio/resume.png', 'portfolio/contact.png'],
+        src: 'https://ireneaus.netlify.app/images/home.png',
+        type: 'image',
         link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
     {
@@ -22,9 +22,8 @@ const medias = ref([
         desc: "",
         features: ['Home', 'Shop', 'cart', 'checkout', 'wishlist', 'product'],
         technologies: ['HTML', 'CSS', "Tailwindcss", "JS", "VueJs", 'nuxt.js', 'pinia'],
-        src: ['okisstore/home.png', 'okisstore/home.png','okisstore/home002.png','okisstore/home003.png',
-            'okisstore/shop.png', 'okisstore/product001.png', 'okisstore/cart.png','okisstore/wishlist.png',
-            'okisstore/checkout.png'],
+        src: 'https://ireneaus.netlify.app/images/',
+        type: 'video',
         link: 'https://okisstore.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-store'
     },
     {
@@ -34,9 +33,8 @@ const medias = ref([
          it was a great experience for me during the process of developing https://digitalassetsgrowth.com",
         features: ['Home', 'About Company', 'Pricing', 'Service', 'Registeration/Authentication', 'user dashboard'],
         technologies: ['HTML', 'CSS', "Tailwind CSS", "JS", "VueJs/Nuxt.js", 'python/Django Rest Famework'],
-        src: ['digital Assets/home.jpg', 'digital Assets/yoe.png',
-            'digital Assets/003.png', 'digital Assets/company.png', 'digital Assets/contact.png',
-            'digital Assets/pricing.png','digital Assets/service.png'],
+        src: 'https://ireneaus.netlify.app/images/digital.jpg',
+        type: 'video',
         link: 'https://digitalassetsgrowth.com', repo: '#'
     },
 
@@ -48,8 +46,8 @@ const medias = ref([
                        and multi-delete tasks efficiently.',
         features: ['Alarm', 'Time Calculation', 'Dark and Light Themes', 'animations'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs"],
-        src: ['Todo App/home dk.png', 'Todo App/home lt.png', 'Todo App/alarm.jpg', 'Todo App/new task dk.png',
-            'Todo App/edit lt.jpg'],
+        src: 'https://ireneaus.netlify.app/images/todo.png',
+        type: 'image',
         link: 'https://ireneaus-todo-app-project.netlify.app',
         repo: 'https://github.com/EbubeIreneaus/TodoApp'
     },
@@ -61,20 +59,20 @@ const medias = ref([
                      on Tweets efficiently. ',
         features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication', 'Profile...'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: ['twitter app/home.png', 'twitter app/register.png', 'twitter app/singleTweet.png', 'twitter app/profile.png'],
+        src: 'https://ireneaus.netlify.app/images/twitter..png',
+        type: 'image',
         link: 'https://twitter-xx.netlify.app/', repo: 'https://github.com/EbubeIreneaus/X'
     },
 
     {
         name: "Oki's Repair",
-        desc: 'Okis Repair is a static website, I designed it to boost my front end experiece, it has no \
+        desc: 'Okis Reepair is a static website, I designed it to boost my front end experiece, it has no \
         functionality, only design. feel free to check it out',
         features: [],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxtJs'],
-        src: ['OkisRepair/home.png','OkisRepair/home2.png','OkisRepair/bk-service.png',
-        'OkisRepair/contact-us.png','OkisRepair/footer.png',
-    ],
-     link: 'https://okisrepair.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-repair'
+        src: 'https://ireneaus.netlify.app/images/okrepair.jpg',
+        type: 'image',
+        link: 'https://okisrepair.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-repair'
     },
 
     {
@@ -85,8 +83,8 @@ The more I go, the more I see more reason to love python due to it numerous libr
  tough task easy.Feel free to review this project 🙏 💪",
         features: ['Link Shortener', 'QRCode Generator'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js', 'python', 'django'],
-        src: ['url shortener/Url-Shortener.png', 'url shortener/Url-Shortener home2.png','url shortener/qr_img.png',
-            'url shortener/qr_generator page.png', 'url shortener/qr-code modal.png'],
+        src: 'https://ireneaus.netlify.app/imagesurl shortener/Url-Shortener.png',
+        type: 'image',
         link: 'https://isls.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
 
@@ -113,71 +111,17 @@ const changePrevImg = (e) => {
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
 
-            <div class="port-container  mt-3 ">
-                <div class=" media-sec position-relative mb-3" v-for="(media, index) in medias" :key="index" data-aos="slide-up"
-                :data-aos-delay="index *50">
-                    <div class=" position-absolute w-100 h-100 action-bar d-flex justify-content-center align-items-center">
-                        <button class=" fa-2xl text-dark btn" @click="openModal(index)">
-                            <i class="fa fa-eye text-secondary"></i>
-                        </button>
-                    </div>
-                    <img :src="`/images/${media.src[0]}`" class="" style="object-fit: cover; object-position: center; "/>
+            <div class="mt-3 grid lg:grid-cols-3 gap-5">
+                <div class="" v-for="(media, index) in medias" :key="index" data-aos="slide-up" :data-aos-delay="index * 50">
+                  <div class="w-full aspect-video">
+                  <img v-if="media.type == 'image'" :src="media.src" class="w-full h-full"/>
+                  <video v-else :src="media.src"></video>
+                  </div>
                 </div>
             </div>
 
         </div>
-        <div class="cmodal " v-if="dModal">
 
-
-            <div class="modal-body ">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary text-hover-secondary px-3" id="modalTitleId">{{ project.name
-                    }}</h5>
-                    <button type="button" class="btn-close text-light" @click="dModal = false"></button>
-                </div>
-
-                <div class="cont d-flex flex-lg-row flex-column gap-3 ">
-                    <div class="d-flex flex-lg-column flex-row gap-2 img-grid ">
-
-                        <img :src="`/images/${media}`" @click="changePrevImg($event)" class="py-lg-3 py-1 shadow-lg" alt=""
-                            v-for="(media, index) in project.src" :key="index">
-
-                    </div>
-
-                    <div class=" desc p-lg-3 ">
-                        <p class="text-secondarys">
-
-                            <img :src="prev_img" id="img-prev" style="object-fit:cover"
-                                class="float-start p-lg-2 py-1 px-2 shadow-lg animate__animated animate__zoomIn" alt="">
-
-                            {{
-                                project.desc }}
-                        </p>
-                        <ul class="d-flex  mt-2 flex-wrap"><b class="text-primary py-2">Features:</b>
-                            <li v-for="(ft, index) in project.features" :key="index" class="px-3 py-2 text-secondary">{{
-                                ft }}</li>
-
-                        </ul>
-
-                        <ul class="d-flex  mt-2 flex-wrap"><b class="text-primary py-2">Tech:</b>
-                            <li v-for="(ft, index) in project.technologies" :key="index" class="px-3 py-2 text-secondary">{{
-                                ft }}</li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="modal-footer ">
-                    <a :href="project.link" target="_blank" class="btn text-primary  text-hover-secondary"><i
-                            class="fa fa-eye"></i>
-                        view</a>
-                    <a :href="project.repo" target="_blank" class="btn text-primary text-hover-secondary"><i
-                            class="fa-brands fa-github"></i>
-                        git repo</a>
-                </div>
-            </div>
-
-        </div>
 
 
     </div>
