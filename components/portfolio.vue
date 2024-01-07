@@ -8,36 +8,47 @@ const medias = ref([
     {
         name: 'My Portifolio',
         desc: "Welcome to my digital portfolio, a space where creativity knows no bounds. I'm \
-        Ebube Ireneaus, and I specialize in bringing ideas to life through web development, design, and more.\
-        \n My portfolio is more than just a collection of projects; it's a testament to my dedication to \
-         innovation and the art of storytelling through technology,",
+        Ebube Ireneaus, and I specialize in bringing ideas to life through web development, design, and more. \
+        design with sass, tailwindcss, vuejs and nuxtjs",
         features: ['Gallery', 'About me', 'What I offer', 'my resume', 'my skills'],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js'],
-        src: 'https://ireneaus.netlify.app/images/home.png',
+        src: '/images/about.png',
         type: 'image',
         link: 'https://ireneaus.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
     },
     {
         name: "Oki's Store",
-        desc: "",
+        desc: "Oki's Store, is an interactive user frendly Ecommerce website. this project has level up my skills,\
+         my first time using pinia state management \
+        to persist the state of cart items across all pages. this app was design with Tailwindcss, vue.js, nuxt.js \
+        and fake store API for products,",
         features: ['Home', 'Shop', 'cart', 'checkout', 'wishlist', 'product'],
         technologies: ['HTML', 'CSS', "Tailwindcss", "JS", "VueJs", 'nuxt.js', 'pinia'],
-        src: 'https://ireneaus.netlify.app/images/',
+        src: '/video/okisstore.mp4',
         type: 'video',
         link: 'https://okisstore.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-store'
     },
     {
         name: 'Digital Assets',
-        desc: "thisis one of numerious website I built for my client. Digital Assets is a crypto and forex trading \
-        investment plartform, I was opportuned to carry out this project of building thier full stack web application.\
-         it was a great experience for me during the process of developing https://digitalassetsgrowth.com",
+        desc: "this is one of numerious website  built for my potential client. Digital Assets is a crypto and forex trading \
+        investment plartform, I was opportuned to carry out this project of building this full stack web application.\
+          https://digitalassetsgrowth.com",
         features: ['Home', 'About Company', 'Pricing', 'Service', 'Registeration/Authentication', 'user dashboard'],
         technologies: ['HTML', 'CSS', "Tailwind CSS", "JS", "VueJs/Nuxt.js", 'python/Django Rest Famework'],
-        src: 'https://ireneaus.netlify.app/images/digital.jpg',
+        src: '/video/dgassets.mp4',
         type: 'video',
-        link: 'https://digitalassetsgrowth.com', repo: '#'
+        link: 'https://digitalassetsgrowth.com', repo: 'https://github.com/EbubeIreneaus/DigitalAssets'
     },
-
+    {
+        name: 'Isls Url Shortener',
+        desc: "just completed another project, URL shortener coupled QRCode generator, powered by python(Django Rest Framework), \
+        on the client side  javascript (vue.js, nuxt.js) and cloudinary storage system, it was an awesome experience",
+        features: ['Link Shortener', 'QRCode Generator'],
+        technologies: ['HTML', 'CSS', "Tailwindcss", "JS", "VueJs", 'nuxt.js', 'python', 'django'],
+        src: '/video/isls.mp4',
+        type: 'video',
+        link: 'https://isls.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
+    },
     {
         name: 'Todo App',
         desc: 'The Interactive To-Do List Web App is a user-friendly task management\
@@ -53,13 +64,12 @@ const medias = ref([
     },
     {
         name: 'Twitter-like App',
-        desc: 'The Interactive Twitter-like Web App is a user-friendly social media app \
-                    designed to help users with communication, Entertainment, News. The app\
-                     provides an intuitive and visually appealing interface to Tweet, Like, and Comment \
-                     on Tweets efficiently. ',
+        desc: 'This a copy of twitter(x) social media plartform, This project was develop my me to level up my knowledge\
+     on vue.js, and django. this code seems complicated but this is my first experience. planning to match this up with another social \
+     media plartform right now.',
         features: ['Tweet', 'Likes', 'Comment', 'view nexted comment', 'Authentication', 'Profile...'],
-        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'Django'],
-        src: 'https://ireneaus.netlify.app/images/twitter..png',
+        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'python', 'Django'],
+        src: 'https://ireneaus.netlify.app/images/twitter.png',
         type: 'image',
         link: 'https://twitter-xx.netlify.app/', repo: 'https://github.com/EbubeIreneaus/X'
     },
@@ -70,23 +80,12 @@ const medias = ref([
         functionality, only design. feel free to check it out',
         features: [],
         technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxtJs'],
-        src: 'https://ireneaus.netlify.app/images/okrepair.jpg',
+        src: 'https://ireneaus.netlify.app/images/okrepair.png',
         type: 'image',
         link: 'https://okisrepair.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-repair'
     },
 
-    {
-        name: 'Isls Url Shortener',
-        desc: "just completed another project, URL shortener with QRCode generator, with python (django) \
-        and javascript (vue.js, nuxt.js), it was an awesome experience developing this project.\
-The more I go, the more I see more reason to love python due to it numerous library that has made \
- tough task easy.Feel free to review this project 🙏 💪",
-        features: ['Link Shortener', 'QRCode Generator'],
-        technologies: ['HTML', 'CSS', "Bootstrap 5", "JS", "VueJs", 'nuxt.js', 'python', 'django'],
-        src: 'https://ireneaus.netlify.app/imagesurl shortener/Url-Shortener.png',
-        type: 'image',
-        link: 'https://isls.netlify.app', repo: 'https://github.com/EbubeIreneaus/Ireneaus'
-    },
+
 
 
 ])
@@ -106,17 +105,31 @@ const changePrevImg = (e) => {
  
 <template>
     <div id="portfolio" class="portfolio mt-5">
-        <div class="portfolio-content" data-aos="fade-up">
-            <div class="head-title py-5 px-3">
+        <div class="portfolio-content">
+            <div class="head-title py-5 px-3" data-aos="fade-up">
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
 
-            <div class="mt-3 grid lg:grid-cols-3 gap-5">
-                <div class="" v-for="(media, index) in medias" :key="index" data-aos="slide-up" :data-aos-delay="index * 50">
-                  <div class="w-full aspect-video">
-                  <img v-if="media.type == 'image'" :src="media.src" class="w-full h-full"/>
-                  <video v-else :src="media.src"></video>
-                  </div>
+            <div class="mt-3 grid  md:grid-cols-2 lg:grid-cols-4 gap-5 px-5 lg:px-10">
+                <div class="" v-for="(media, index) in medias" :key="index" data-aos="slide-up"
+                    :data-aos-delay="index * 50">
+                    <div class="w-full aspect-video">
+                        <img v-if="media.type == 'image'" :src="media.src" class="w-full h-full" />
+                        <video :src="media.src" class="w-full h-full" controls v-else></video>
+                    </div>
+                    <div class=" text-white">
+                        <p class="text-balance text-sm text-orange-300 capitalize">{{ media.desc }}</p>
+                        <div class="flex gap-4">
+                            <a :href="media.link" class="flex items-center gap-1">
+                                <span class="py-1">View</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a :href="media.repo" class="flex items-center gap-1">
+                                <span class="py-1">Git</span>
+                                <i class="fa fa-arrow-right "></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -129,134 +142,4 @@ const changePrevImg = (e) => {
  
 <style lang="sass" scoped>
     @import "~/assets/css/_color.sass"     
-    ::-webkit-scrollbar 
-        width: 7px !important
-        height: 2px
-    
-
-    ::-webkit-scrollbar-track 
-        background-color: white
-    
-
-    ::-webkit-scrollbar-thumb 
-        background-color: black
-        border-radius: 40px
-    
-
-   
-        
-
-    .port-container
-        display: grid
-        grid-template-columns: repeat(3, 33.33%)
-        gap: 20px
-        padding: 0 7em
-        animation: zoomIn 1s ease 
-        .media-sec
-            box-shadow: 0 0 10px 0 black
-
-            .action-bar
-                background-color: transparentize($primary, .7)
-                scale: 0
-                transition: all .5s ease
-            // img
-
-            &:hover
-                .action-bar
-                    scale: 1
-
-    .cmodal
-        height: 100vh
-        width: 100vw
-        position: fixed
-        left: 0
-        top: 0
-        z-index: 9999
-        background-color: transparentize($bg, .5)
-        
-        .modal-body
-                background-color: $bg
-                position: abosolute
-                z-index: 9999
-                width: 90%
-                height: 90%
-                margin: 2.5% auto
-                padding: 10px
-                box-shadow: 0 0 2px 0 black
-              
-                .modal-header, .modal-footer
-                    height: 10%
-                .cont
-                    height: 80%
-
-                    .img-grid
-                        width: 20%
-                        height: 100%
-                        padding: 15px
-                        overflow-y: scroll
-
-                        img
-                            object-fit: 'cover'
-                    .desc
-                        width:80%
-                        overflow-y: scroll
-                        p
-                            color: $primary
-                            img
-                                width: 100%
-                                padding: 4px
-                                margin-bottom:10px
-                    
-
-// .v-enter-active
-//     animation-name: 'zoomIn'
-//     animation-duration: 5s
-
-@media screen and (max-width:992px)
-    .port-container
-            grid-template-columns: 50% 50%
-            padding: 0 1.5em
-    
-    .modal-body
-        width: 90% !important
-        margin-top: 7% !important
-        .modal-header, .modal-footer
-            height: 10%
-        .cont
-            height: 80%
-
-            .img-grid
-                width: 100% !important
-                max-height: 10% !important
-                overflow-x: scroll !important
-                overflow-y: hidden !important
-                padding: 0 !important
-                margin: 0 !important
-
-
-            .desc
-                width:100% !important
-                overflow-x: hidden !important
-
-                ul
-                    padding: 0
-                
-              
-
-            
-
-           
-@media screen and (max-width:462px)
-    .port-container
-            grid-template-columns: 100%
-            padding: 0 1em
-
-    .img-grid
-        min-height: 100px !important  
-        img
-            height: 100px  
-    .desc
-        p
-            img
-                width: 100%      
 </style>

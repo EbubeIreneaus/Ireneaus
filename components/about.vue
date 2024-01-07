@@ -11,8 +11,8 @@
             <div>
                 <div class="first-sec-about p-lg-1 p-2">
                     <div class="about-me-txt p-lg-5 ">
-                        <p class="text-light">
-                            <img src="~/assets/img/ebube1.jpg" alt="" class="mx-md-3 mb-lg-0 mb-4 " data-aos="fade-up">
+                        <p class="text-light px-5 md:px-px">
+                            <img src="~/assets/img/001.png" alt="" class="mx-md-3 mb-lg-0 mb-4 size-80 rounded object-cover" data-aos="fade-up">
                             <p class="txt text-light" data-aos="slide-left">Passionate Full-Stack Developer with a focus on creating seamless web applications. Proficient in
                             <span class="skill-txt">HTML</span>, <span class="skill-txt">CSS</span>,
                             <span class="skill-txt">Bootstrap</span> and <span class="skill-txt">JavaScript</span>, I

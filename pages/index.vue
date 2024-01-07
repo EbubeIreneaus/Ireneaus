@@ -44,10 +44,10 @@ onBeforeMount(() => {
 
 <template>
     <div id="home" class="main">
-        <div class="section-one">
+        <div class="section-one border h-dvh">
             <div class="b-content">
 
-                <div class="w-100 d-flex justify-content-between align-items-center content px-lg-5 px-md-3 px-2">
+                <div class="w-full d-flex justify-content-between align-items-center content px-lg-5 px-md-3 px-2">
 
                     <div class="text-content">
                         <h2 class="text-primary animate__animated animate__slideInLeft">Okigwe Ebube Ireneaus</h2>
