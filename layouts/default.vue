@@ -16,7 +16,7 @@ onMounted(() => {
     <main>
         <div class="layout-bar">
             <header>
-                <div class="head-1 py-2 px-3 d-md-flex d-none justify-content-between align-items-center">
+                <div class=" py-2 px-3 d-md-flex d-none justify-content-between align-items-center">
                     <button class="btn bg-primary bg-hover-secondary ms-lg-3">
                     <nuxt-link to="#contact" class="text-large text-light ">Contact</nuxt-link></button>
                     <social-icons />
@@ -118,7 +118,7 @@ header
     height: 70px
     top: 0
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2)
-    background-color: transparentize($bg, .1)
+    background-color: transparentize($bg, 0)
 
 .offcanvas
     background-color: transparentize($bg, .2)

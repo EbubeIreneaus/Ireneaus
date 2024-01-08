@@ -110,7 +110,7 @@ const changePrevImg = (e) => {
                 <h2 class="text-primary py-2 ">Portfiolo</h2>
             </div>
 
-            <div class="mt-3 grid  md:grid-cols-2 lg:grid-cols-4 gap-5 px-2 md:px-5 lg:px-10">
+            <div class="mt-3 grid  md:grid-cols-2 lg:grid-cols-4 gap-5 !px-5 md:!px-5 lg:!px-10">
                 <div class="" v-for="(media, index) in medias" :key="index" data-aos="slide-up"
                     :data-aos-delay="index * 50">
                     <div class="w-full aspect-video">
@@ -119,7 +119,7 @@ const changePrevImg = (e) => {
                     </div>
                     <div class=" text-white">
                         <p class="text-balance text-sm text-orange-300 capitalize">{{ media.desc }}</p>
-                        <div class="flex gap-4">
+                        <div class="flex gap-5 px-3">
                             <a :href="media.link" class="flex items-center gap-1">
                                 <span class="py-1">View</span>
                                 <i class="fa fa-arrow-right"></i>
