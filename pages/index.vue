@@ -73,7 +73,7 @@ onBeforeMount(() => {
                 </div>
 
                 <p class="mt-5 block md:hidden !order-3">
-                    <a href="#" class="px-14 py-3 text-secondary bg-slate-900 rounded hover:bg-slate-950">
+                    <a href="/ireneaus-resume.pdf" class="px-14 py-3 text-secondary bg-slate-900 rounded hover:bg-slate-950">
                         download cv
                     </a>
                 </p>
