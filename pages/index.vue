@@ -46,7 +46,7 @@ onBeforeMount(() => {
 
 <template>
     <div id="home" class="main">
-        <div class="border h-dvh md:bg-gradient-to-r md:from-black md:from-45% md:via-black/30 md:to-black bg-gradient-to-t
+        <div class="h-dvh md:bg-gradient-to-r md:from-black md:from-45% md:via-black/30 md:to-black bg-gradient-to-t
          from-black via-black/20 to-black">
 
             <div class="w-full h-full flex flex-col md:flex-row  justify-center 
@@ -62,7 +62,7 @@ onBeforeMount(() => {
                     </h2>
 
                     <p class="mt-5 hidden md:block">
-                        <a href="/ireneaus-resume.pdf" class="px-14 py-3 text-secondary bg-slate-950 rounded hover:bg-slate-900">
+                        <a href="/ireneaus-resume.pdf" class="px-14 py-3 text-secondary bg-slate-900 rounded hover:bg-slate-950">
                             download cv
                         </a>
                     </p>
@@ -73,7 +73,7 @@ onBeforeMount(() => {
                 </div>
 
                 <p class="mt-5 block md:hidden !order-3">
-                    <a href="#" class="px-14 py-3 text-secondary bg-slate-950 rounded hover:bg-slate-900">
+                    <a href="#" class="px-14 py-3 text-secondary bg-slate-900 rounded hover:bg-slate-950">
                         download cv
                     </a>
                 </p>
