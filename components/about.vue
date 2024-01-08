@@ -15,7 +15,7 @@
                             <img src="~/assets/img/001.png" alt="" class="mx-md-3 mb-lg-0 mb-4 size-80 rounded object-cover hidden md:inline-block" data-aos="fade-up">
                             <p class="txt text-light" data-aos="slide-up">Passionate Full-Stack Developer with a focus on creating seamless web applications. Proficient in
                             <span class="skill-txt">HTML</span>, <span class="skill-txt">CSS</span>,
-                            <span class="skill-txt">Bootstrap</span> and <span class="skill-txt">JavaScript</span>, I
+                            <span class="skill-txt">Bootstrap</span>,<span class="skill-txt">Tailwindcss</span> and <span class="skill-txt">JavaScript</span>, I
                             specialize in crafting visually appealing and responsive
                             front-end interfaces that elevate user experiences. Leveraging <span
                                 class="skill-txt">Vue.js</span>
