@@ -49,7 +49,7 @@
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Age</b> <span> 22</span>
                         </p> -->
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <p class="col-lg-6 col-12 " data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Website</b> <span>https://ireneaus.netlify.app</span>
                         </p>
@@ -203,6 +203,7 @@
     .info-sec
         p
             color: $primary
+            margiin: 6px 0
             i, b
                 color: $secondary
 
