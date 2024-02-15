@@ -39,25 +39,25 @@
                     </div>
                 </div>
 
-                <div class="about-detail d-flex flex-lg-row flex-column gap-lg-5 gap-2 px-lg-5 p-3">
-                    <div class="info-sec row mb-5" >
-                         <p class="col-lg-6 col-12" data-aos="flip-up">
+                <div class="about-detail flex md:flex-row flex-col gap-5  px-lg-5 p-3">
+                    <div class="info-sec grid md:grid-cols-2 mb-3 w-full *:mb-4 md:*:mb-px" >
+                         <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Full Name</b> <span> Okigwe Ebube Ireneaus</span>
                         </p>
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Gender</b> <span> Male</span>
                         </p>
-                        <p class="col-lg-6 col-12 " data-aos="flip-up">
+                        <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Website</b> <span>https://ireneaus.netlify.app</span>
                         </p>
-                        <p class="col-lg-6 col-12">
+                        <p class="w-full">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Degree</b> <span> B.Sc</span>
                         </p>
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> whatsapp</b> <span> +234 80 619 825 20</span>
                         </p>
@@ -65,11 +65,11 @@
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Email</b> <span> okigweebube7@gmail.com</span>
                         </p>
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> City</b> <span>FCT, Abuja</span>
                         </p>
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <p class="w-full" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Freelancing</b> <span> Available</span>
                         </p>
@@ -203,7 +203,7 @@
     .info-sec
         p
             color: $primary
-            margiin: 6px 0
+
             i, b
                 color: $secondary
 
