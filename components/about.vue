@@ -33,7 +33,8 @@
                             my
                             skills while expanding my toolkit.
                             <br><br>
-                            Let's collaborate to bring your ideas to life!"</p>
+                            Let's collaborate to bring your ideas to life!"
+                            </p>
                         </p>
                     </div>
                 </div>

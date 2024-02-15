@@ -35,10 +35,10 @@ export default defineNuxtConfig({
 
   css:[
       'aos/dist/aos.css',
-      '~/assets/main.css',
       'bootstrap/dist/css/bootstrap.css',
       '@fortawesome/fontawesome-free/css/all.css',
       'animate.css/animate.min.css',
-      '~/assets/css/main.sass'
+      '~/assets/css/main.sass',
+      '~/assets/main.css',
   ]
 })

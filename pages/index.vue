@@ -69,7 +69,7 @@ onBeforeMount(() => {
                 </div>
 
                 <div class="order-2 md:!order-1">
-                    <img src="~/assets/img/001.png" alt="" class="size-56 rounded-full shadow-lg shadow-slate-200">
+                    <img src="~/assets/img/001.png" alt="" class="!size-56 rounded-full shadow-lg shadow-slate-200">
                 </div>
 
                 <p class="mt-5 block md:hidden !order-3">
