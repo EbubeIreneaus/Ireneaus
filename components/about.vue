@@ -41,14 +41,14 @@
 
                 <div class="about-detail d-flex flex-lg-row flex-column gap-lg-5 gap-2 px-lg-5 p-3">
                     <div class="info-sec row " >
-                        <p class="col-lg-6 col-12" data-aos="flip-up">
+                        <!-- <p class="col-lg-6 col-12" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Birthday</b> <span> 12 Oct 2002</span>
                         </p>
                         <p class="col-lg-6 col-12" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Age</b> <span> 22</span>
-                        </p>
+                        </p> -->
                         <p class="col-lg-6 col-12" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Website</b> <span>https://ireneaus.netlify.app</span>
