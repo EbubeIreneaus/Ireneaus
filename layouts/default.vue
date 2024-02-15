@@ -82,7 +82,7 @@ onMounted(() => {
 
         <footer>
             <div class="w-100 footer text-primary shadow-lg ">
-                &copy;2023 Ebube Ireneaus
+                &copy;2024 Ebube Ireneaus
             </div>
         </footer>
     </main>
