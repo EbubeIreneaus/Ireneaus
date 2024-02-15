@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="about-detail d-flex flex-lg-row flex-column gap-lg-5 gap-2 px-lg-5 p-3">
-                    <div class="info-sec row " >
+                    <div class="info-sec row mb-5" >
                         <!-- <p class="col-lg-6 col-12" data-aos="flip-up">
                             <i class="fa-solid fa-angle-right"></i>
                             <b> Birthday</b> <span> 12 Oct 2002</span>
