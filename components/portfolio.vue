@@ -27,7 +27,7 @@ const medias = ref([
         name: "School Template Landing Page",
         src: '/images/school_template.png',
         type: 'image',
-        link: 'https://okisrepair.netlify.app', repo: 'https://github.com/EbubeIreneaus/okis-repair'
+        link: 'https://schooltemplatelandingpage.netlify.app', repo: 'https://github.com/EbubeIreneaus/school_template'
     },
     {
         name: 'Isls Url Shortener and QRCode generator',
