@@ -80,7 +80,7 @@ onMounted(() => {
             <slot></slot>
         </div>
 
-        <footer>
+        <footer class="bg-black">
             <div class="w-100 footer text-primary shadow-lg ">
                 &copy;2024 Ebube Ireneaus
             </div>

@@ -89,7 +89,7 @@ const changePrevImg = (e) => {
                         <img v-if="media.type == 'image'" :src="media.src" class="w-full h-full object-cover object-center" />
                         <video :src="media.src" class="w-full h-full object-cover object-center" controls v-else></video>
                     </div>
-                    <div class="absolute left-0 bottom-0 py-0.5 bg-green-600/80 w-full flex px-5 gap-5 text-white justify-between">
+                    <div class="absolute left-0 bottom-0 py-0.5 bg-green-400/80 w-full flex px-5 gap-5 text-white justify-between">
                         <p class="text-sm line-clamp-1 text-ellipsis flex-grow overflow-hidden">
                             {{media.name}}
                         </p>

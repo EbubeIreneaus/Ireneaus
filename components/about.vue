@@ -18,8 +18,8 @@
                             <span class="skill-txt">Bootstrap</span>,<span class="skill-txt">Tailwindcss</span> and <span class="skill-txt">JavaScript</span>, I
                             specialize in crafting visually appealing and responsive
                             front-end interfaces that elevate user experiences. Leveraging <span
-                                class="skill-txt">Vue.js</span>
-                            and <span class="skill-txt">Nuxt.js</span>, I excel in
+                                class="skill-txt">(Vue.js, Nuxt.js)</span>
+                            and <span class="skill-txt">(React.js, Next.js)</span>, I excel in
                             building dynamic and interactive user interfaces that seamlessly connect with back-end
                             functionalities.
                             <br> <br>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
-                                <b>CSS (sass)</b>
+                                <b>CSS</b>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated w90"
                                     data-aos="slide-right">
@@ -92,14 +92,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
-                                <b>Bootstrap</b>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w90"
-                                    data-aos="slide-right">
-                                        90%</div>
-                                </div>
-                            </div> 
+
                             <div class="col-lg-6 col-12">
                                 <b>Tailwind css</b>
                                 <div class="progress">
@@ -126,12 +119,28 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
+                                <b>React.js</b>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w95"
+                                    data-aos="slide-right">
+                                        95%</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
                                 <b>Nuxt.js</b>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated w95"
                                     data-aos="slide-right">
                                         95%
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <b>Next.Js</b>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated w95"
+                                    data-aos="slide-right">
+                                        95%</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
@@ -168,15 +177,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
-                                <b>WordPress</b>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated w90"
-                                    data-aos="slide-right" data-aos-offset="50">
-                                        90%
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

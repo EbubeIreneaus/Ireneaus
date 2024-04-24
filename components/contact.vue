@@ -32,7 +32,7 @@ const sendMail = async (e) => {
 </script>
 
 <template>
-    <section id="contact" class="contact section-show mb-5">
+    <section id="contact" class="contact section-show py-5">
         <div class="contact-content" data-aos="fade-up">
             <div class="head-title py-5 px-3">
                 <h2 class="text-primary py-2">Contact</h2>
@@ -41,7 +41,7 @@ const sendMail = async (e) => {
 
                 <div class="row stcw mt-2">
     
-                    <div class="col-md-6 d-flex align-items-stretch " data-aos="slide-right">
+                    <div class="col-md-6 d-flex align-items-stretch " data-aos="fade-right">
                         <div class="info-box ">
                             <i class="fa-solid fa-map"></i>
                             <h3>My Address</h3>
@@ -49,7 +49,7 @@ const sendMail = async (e) => {
                         </div>
                     </div>
     
-                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch " data-aos="slide-down">
+                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch " data-aos="fade-down">
                         <div class="info-box ">
                             <i class="fa-brands fashare-alt"></i>
                             <h3>Social Profiles</h3>
@@ -60,7 +60,7 @@ const sendMail = async (e) => {
                         </div>
                     </div>
     
-                    <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="slide-right">
+                    <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-right">
                         <div class="info-box">
                             <i class="fa-solid fa-envelope"></i>
                             <h3>Email Me</h3>
@@ -76,7 +76,7 @@ const sendMail = async (e) => {
                     </div>
                 </div>
                 <div class="d-flex flex-lg-row flex-column gap-3 mt-3 form-sec">
-                    <div class="w-100" data-aos="slide-right">
+                    <div class="w-100" data-aos="fade-right">
                         <iframe class="w-100 h-100"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126051.79072541997!2d7.270728904779625!3d9.143772644817815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf3367a61f05%3A0xc111bee746fb6245!2sKubwa%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1695727834787!5m2!1sen!2sng"
                             style="border:0;" allowfullscreen="" loading="lazy"
@@ -84,7 +84,7 @@ const sendMail = async (e) => {
                     </div>
     
     
-                    <form @submit.prevent="sendMail($event)" ref="fm" class="w-100" data-aos="slide-left">
+                    <form @submit.prevent="sendMail($event)" ref="fm" class="w-100" data-aos="fade-left">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" v-model="form.fullName" class="form-control" id="name"
@@ -107,7 +107,7 @@ const sendMail = async (e) => {
                             <!-- error msg -->
                             <small ref="errorMsg"></small>
                         </div>
-                        <div class="" data-aos="slide-up"><button type="submit" class="btn pe-2 ps-2 text-secondary" ref="closeBtn">Send
+                        <div class="" data-aos="fade-up"><button type="submit" class="btn pe-2 ps-2 text-secondary" ref="closeBtn">Send
                                 Message</button></div>
                     </form>
     
