@@ -11,11 +11,11 @@
             <div class="section-services  mt-2 ms-3" id="servicecomp">
                 <div class="animate__animated animate__slideInUp ">
                     <div class="container">
-                        <div class="row">
+                        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-3">
 
                             <!-- Start Single Service -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="single-service" data-aos="slide-right">
+                            <div class=" ">
+                                <div class="single-service shadow-md shadow-white/40" data-aos="fade-right">
                                     <div class="part-1">
                                         <i class="fab fa-500px"></i>
                                         <h3 class="title">Front End Development</h3>
@@ -33,8 +33,8 @@
                                 </div>
                             </div>
                                    <!-- Start Single Service -->
-                                   <div class="col-md-6 col-lg-4">
-                                <div class="single-service " data-aos="slide-up">
+                                   <div class="">
+                                <div class="single-service shadow-md shadow-white/40" data-aos="fade-up">
                                     <div class="part-1">
                                         <i class="fab fa-angellist"></i>
                                         <h3 class="title">Back End Development</h3>
@@ -56,8 +56,8 @@
                          
                          
                                <!-- Start Single Service -->
-                               <div class="col-md-6 col-lg-4">
-                                <div class="single-service" data-aos="slide-left">
+                               <div class="">
+                                <div class="single-service  shadow-md shadow-white/40" data-aos="fade-left">
                                     <div class="part-1">
                                         <i class="fas fa-award"></i>
                                         <h3 class="title">Full Stack Development</h3>
@@ -74,8 +74,8 @@
                             </div>
           
                                <!-- Start Single Service -->
-                               <div class="col-md-6 col-lg-4">
-                                <div class="single-service " data-aos="slide-up">
+                               <div class="">
+                                <div class="single-service  shadow-md shadow-white/40 " data-aos="fade-up">
                                     <div class="part-1">
                                         <i class="fab fa-asymmetrik"></i>
                                         <h3 class="title">SEO Optimization</h3>
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                             
-                            <!-- <div class="col-md-6 col-lg-4">
+                            <!-- <div class="">
                                 <div class="single-service animate__animated animate__slideInDown animate__delay-1s">
                                     <div class="part-1">
                                         <i class="fab fa-angellist"></i>
@@ -114,8 +114,8 @@
                      
          
                             <!-- Start Single Service -->
-                            <div class="col-md-6 col-lg-4">
-                                <div class="single-service " data-aos="slide-right">
+                            <div class="">
+                                <div class="single-service  shadow-md shadow-white/40" data-aos="fade-right">
                                     <div class="part-1">
                                         <i class="fab fa-canadian-maple-leaf"></i>
                                         <h3 class="title">Freelancing</h3>

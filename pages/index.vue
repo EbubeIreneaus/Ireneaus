@@ -45,9 +45,10 @@ onBeforeMount(() => {
 </script>
 
 <template>
-    <div id="home" class="main">
-        <div class="h-dvh md:bg-gradient-to-r md:from-black md:from-45% md:via-black/30 md:to-black bg-gradient-to-t
-         from-black via-black/20 to-black">
+
+    <div id="home" class="main bg-black px-3">
+        <div class="h-dvh md:bg-gradient-to-r md:from-black/80 md:from-45% md:via-black/10 md:to-black/80 bg-gradient-to-t
+         from-black/80 via-black/10 to-black/80">
 
             <div class="w-full h-full flex flex-col md:flex-row  justify-center 
             items-center lg:px-20 gap-x-20 gap-y-7">
